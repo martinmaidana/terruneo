@@ -1,0 +1,256 @@
+/* -----------------BODY---------------- */
+* {
+  line-height: inherit;
+  margin: 0;
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* -----------------NAVBAR---------------- */
+nav {
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+
+.blanco {
+  font-weight: bolder;
+  color: white;
+}
+
+.naranja {
+  font-weight: bold;
+  color: #F3924B; /* Cambiando a color naranja */
+}
+
+
+.button_conocenos{
+  border-radius: 22px;
+}
+
+/* -----------------MAIN-------------- */
+
+.gestionaElTerritorio {
+  background-image: url("./assets/Vector.png");
+  background-color: black;
+}
+
+.titulo_blanco {
+  color: white;
+  font-weight: bold;
+}
+
+.button_conocenos {
+  font-size: 11px;
+  color: rgb(44, 44, 44);
+  background-color: rgb(204, 204, 204);
+}
+
+.subtitulo_blanco {
+  color: white;
+}
+
+.subtitulo_naranja,
+.h6_naranja {
+  color: #F3924B; /* Cambiando a color naranja */
+  font-weight: bold;
+}
+
+.texto_blanco {
+  color: white;
+}
+
+.texto_naranja {
+  color: #F3924B; /* Cambiando a color naranja */
+}
+
+.imagen_teledeteccion {
+  height: 199px;
+  width: auto;
+  border-radius: 27px;
+}
+
+/* -----------------HEADER--------------- */
+
+.solucion_completa {
+  background-image: url("./assets/Vector.png");
+  background-color: black;
+}
+
+.card{
+  color:#ffffff;
+}
+
+/* ------------------SECCION FACIL-------------- */
+.facil_de_usar{
+  background-color: rgb(35, 35, 35);
+}
+
+.facil_parrafos{
+  display:flex;
+  justify-content: space-around;
+}
+.video-container {
+  display: flex;
+  justify-content: center; /* Alinea horizontalmente */
+}
+
+.video-container video {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.facil_parrafos,
+.facil_parrafos_en_orden {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.facil_parrafos > div,
+.facil_parrafos_en_orden > div {
+  flex: 0 0 calc(33% - 20px); /* 33.33% width for each item with some spacing */
+  margin-bottom: 20px; /* Adjust margin between items */
+}
+
+
+/* Agrega líneas blancas entre las filas */
+.facil_parrafos_en_orden::after {
+  content: '';
+  display: block;
+  width: 95%;
+  height: 1px;
+  background-color: white;
+  margin: 20px 0; /* Ajusta el espacio entre las líneas según sea necesario */
+}
+
+.facil_columna2{
+  
+  line-height: 0.8;
+}
+
+.facil_columna3{
+  line-height: 0.2;
+}
+
+@media (max-width: 768px) {
+  .facil_parrafos > div,
+  .facil_parrafos_en_orden > div {
+    flex: 0 0 calc(50% - 20px); /* 50% width for each item on smaller screens */
+  }
+}
+/* --------------CAMPOS DE ACCION-------------- */
+.campos_de_accion{
+  background-color: rgb(35, 35, 35);
+}
+
+/* --------------FORMULARIO DE CONTACTO-------------- */
+.contacto{
+  background-image: url("./assets/Vector.png");
+  background-color: black;
+}
+
+.contacto_titulo {
+  display: flex;
+}
+
+.contacto_titulo_formulario {
+  flex: 60%; /* El 60% del espacio disponible */
+}
+
+.contacto_formulario {
+  flex: 40%; /* El 40% del espacio disponible */
+}
+.contacto_formulario {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px; /* Espacio entre cada grupo de etiqueta e input */
+}
+
+.form-group label {
+  margin-bottom: 5px; /* Espacio entre la etiqueta y el input */
+}
+
+.form-group input,
+.form-group textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  padding: 5px;
+}
+
+.contacto_formulario button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.contacto_formulario button:hover {
+  background-color: #ddd;
+}
+
+.contacto_formulario {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  flex: 0 0 100%;
+}
+
+.form-group.inline {
+  flex: 0 0 50%;
+}
+
+.form-group.inline label {
+  display: inline-block;
+  width: 30%; /* Ajusta el ancho de las etiquetas según sea necesario */
+}
+
+.form-group.inline input,
+.form-group.inline textarea {
+  display: inline-block;
+  width: 65%; /* Ajusta el ancho de los campos de entrada según sea necesario */
+}
+
+button[type="submit"] {
+  border-radius: 22px; /* Ajusta el valor según sea necesario */
+  /* Otros estilos del botón */
+}
+
+
+/* --------------FOOTER-------------- */
+
+.logo-terruneo {
+  width: 40px;
+}
+
+.logo_atic {
+  width: 134px;
+}
+
+
+/* Estilos personalizados */
+footer {
+  background-color: #515151; /* Negro */
+  color: #fff; /* Blanco */
+}
+
+
+
