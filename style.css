@@ -1,7 +1,9 @@
 /* -----------------BODY---------------- */
-* {
-  line-height: inherit;
+body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -9,65 +11,130 @@
 }
 
 /* -----------------NAVBAR---------------- */
+
 nav {
   display: flex;
   align-items: center;
   background-color: black;
 }
-
+.logo-terruneo {
+  width: 50px;
+}
 .blanco {
   font-weight: bolder;
   color: white;
+  font-size: 4em;
 }
 
 .naranja {
   font-weight: bold;
-  color: #F3924B; /* Cambiando a color naranja */
+  color: #f3924b; /* Cambiando a color naranja */
+  font-size: 4em;
 }
 
+.nav_terruneo {
+  padding-left: 40px;
+  padding-top: 20px;
+}
 
-.button_conocenos{
+.button_conocenos {
   border-radius: 22px;
+  margin-top: 22px;
+  margin-left: 40px;
+  margin-bottom: 60px;
+  width: 230px;
+  height: 50px;
+  font-size: 22px; /* Tamaño de la fuente */
+  color: rgb(44, 44, 44);
+  background-color: rgb(204, 204, 204);
+}
+
+.titulo_blanco {
+  color: white;
+  font-weight: 800; /* O también puedes usar 'bold' */
+  font-size: 4em;
+}
+
+.titulo_principal {
+  padding-top: 80px;
+  padding-left: 40px;
+}
+
+/* -----------------HEADER-------------- */
+.teledeteccion {
+  display: grid;
+  justify-content: end;
+  margin-top: 80px;
+  margin-right: 50px;
+  margin-bottom: 100px;
+}
+.teledeteccion_titulo {
+  margin-bottom: 5.5em;
+  line-height: 0.9px;
+}
+.teledeteccion_parrafo {
+  line-height: 13.9px;
+  font-size: 2em;
+}
+.parrafos-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.linea {
+  display: flex;
 }
 
 /* -----------------MAIN-------------- */
+
+.solucion_completa{
+  padding-top: 60px;
+  padding-left: 40px;
+}
 
 .gestionaElTerritorio {
   background-image: url("./assets/Vector.png");
   background-color: black;
 }
 
-.titulo_blanco {
-  color: white;
-  font-weight: bold;
-}
-
-.button_conocenos {
-  font-size: 11px;
-  color: rgb(44, 44, 44);
-  background-color: rgb(204, 204, 204);
-}
-
 .subtitulo_blanco {
   color: white;
+  font-size: 4em;
 }
 
-.subtitulo_naranja,
-.h6_naranja {
-  color: #F3924B; /* Cambiando a color naranja */
+.subtitulo_naranja {
+  font-size: 4em;
+  color: #f3924b; /* Cambiando a color naranja */
   font-weight: bold;
+}
+
+.subtitulo_naranja_inside {
+  color: #f3924b; /* Cambiando a color naranja */
+  font-weight: bold;
+}
+.h6_naranja {
+  line-height: 0.5px;
+  color: rgb(243, 146, 75);
+  font-weight: 900;
+  margin-top: 24px;
+  font-size: 26px;
 }
 
 .texto_blanco {
   color: white;
 }
+.texto_blanco_cards {
+  color: white;
+  font-size: 1.5em;
+}
 
 .texto_naranja {
-  color: #F3924B; /* Cambiando a color naranja */
+  color: #f3924b; /* Cambiando a color naranja */
 }
 
 .imagen_teledeteccion {
-  height: 199px;
+  height: 380px;
   width: auto;
   border-radius: 27px;
 }
@@ -79,17 +146,21 @@ nav {
   background-color: black;
 }
 
-.card{
-  color:#ffffff;
+.card {
+  color: #ffffff;
+  line-height: 0.5;
 }
 
+
+
+
 /* ------------------SECCION FACIL-------------- */
-.facil_de_usar{
+.facil_de_usar {
   background-color: rgb(35, 35, 35);
 }
 
-.facil_parrafos{
-  display:flex;
+.facil_parrafos {
+  display: flex;
   justify-content: space-around;
 }
 .video-container {
@@ -102,7 +173,6 @@ nav {
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-
 
 .facil_parrafos,
 .facil_parrafos_en_orden {
@@ -117,10 +187,9 @@ nav {
   margin-bottom: 20px; /* Adjust margin between items */
 }
 
-
 /* Agrega líneas blancas entre las filas */
 .facil_parrafos_en_orden::after {
-  content: '';
+  content: "";
   display: block;
   width: 95%;
   height: 1px;
@@ -128,12 +197,11 @@ nav {
   margin: 20px 0; /* Ajusta el espacio entre las líneas según sea necesario */
 }
 
-.facil_columna2{
-  
+.facil_columna2 {
   line-height: 0.8;
 }
 
-.facil_columna3{
+.facil_columna3 {
   line-height: 0.2;
 }
 
@@ -144,12 +212,12 @@ nav {
   }
 }
 /* --------------CAMPOS DE ACCION-------------- */
-.campos_de_accion{
+.campos_de_accion {
   background-color: rgb(35, 35, 35);
 }
 
 /* --------------FORMULARIO DE CONTACTO-------------- */
-.contacto{
+.contacto {
   background-image: url("./assets/Vector.png");
   background-color: black;
 }
@@ -234,23 +302,14 @@ button[type="submit"] {
   /* Otros estilos del botón */
 }
 
-
 /* --------------FOOTER-------------- */
-
-.logo-terruneo {
-  width: 40px;
-}
 
 .logo_atic {
   width: 134px;
 }
-
 
 /* Estilos personalizados */
 footer {
   background-color: #515151; /* Negro */
   color: #fff; /* Blanco */
 }
-
-
-
