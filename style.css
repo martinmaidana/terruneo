@@ -1,5 +1,5 @@
 /* -----------------BODY---------------- */
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -38,10 +38,10 @@ nav {
 }
 
 .button_conocenos {
-  border-radius: 22px;
+  border-radius: 21px;
   margin-top: 22px;
   margin-left: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 160px;
   width: 230px;
   height: 50px;
   font-size: 22px; /* Tamaño de la fuente */
@@ -76,10 +76,29 @@ nav {
   line-height: 13.9px;
   font-size: 2em;
 }
+
+.teledeteccion_parrafo_blanco {
+  color: white;
+}
+
+.teledeteccion_titulo_blanco {
+  font-size: 3em;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 0.6;
+}
+
+.teledeteccion_titulo_naranja {
+  font-size: 3em;
+  color: #f3924b;
+  font-weight: bold;
+  line-height: 0.8;
+}
+
 .parrafos-container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .linea {
@@ -88,25 +107,26 @@ nav {
 
 /* -----------------MAIN-------------- */
 
-.solucion_completa{
-  padding-top: 60px;
-  padding-left: 40px;
-}
-
 .gestionaElTerritorio {
-  background-image: url("./assets/Vector.png");
+  background-image: url("./assets/Elemento\ grafico\ camino\ -\ terruneo-02\ 1.png");
   background-color: black;
+  background-size: cover;
 }
 
-.subtitulo_blanco {
-  color: white;
-  font-size: 4em;
+.reconocimiento {
+  font-size: 3em;
+  color: #ffffff;
+  font-weight: bold;
 }
 
 .subtitulo_naranja {
+  padding-left: 100px;
+
   font-size: 4em;
-  color: #f3924b; /* Cambiando a color naranja */
+  color: #f3924b;
   font-weight: bold;
+  padding-top: 60px;
+  /* padding-right: 100px; */
 }
 
 .subtitulo_naranja_inside {
@@ -122,8 +142,35 @@ nav {
 }
 
 .texto_blanco {
+  padding: 0 70px;
   color: white;
+  font-size: 20px;
 }
+.tabla1 {
+  padding: 0 70px;
+  color: white;
+  padding-top: 40px;
+}
+.cards{
+  display:flex;
+  justify-content:space-between;
+  padding: 0px 70px 0px 70px;
+ 
+}
+.card_fila1, .cards_fila2{
+  width: -webkit-fill-available ;
+}
+.imagen_teledeteccion {
+  height: 250px;
+  /* width: -webkit-fill-available ; */
+  border-radius: 27px;
+}
+
+.cards-imagen1, .cards-imagen2{
+padding-right: 70px;
+}
+
+
 .texto_blanco_cards {
   color: white;
   font-size: 1.5em;
@@ -133,93 +180,262 @@ nav {
   color: #f3924b; /* Cambiando a color naranja */
 }
 
-.imagen_teledeteccion {
-  height: 380px;
-  width: auto;
-  border-radius: 27px;
-}
+
 
 /* -----------------HEADER--------------- */
 
 .solucion_completa {
-  background-image: url("./assets/Vector.png");
+  background-image: url("./assets/Group\ 1000001931.png");
+  background-size: cover;
   background-color: black;
+  padding-top: 60px;
+  padding-left: 70px;
+}
+.solucion_h6_naranja {
+  line-height: 0.5px;
+  color: rgb(243, 146, 75);
+  font-weight: 900;
+  margin-top: 300px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: left;
+  margin-right: 70px;
+}
+.solucion_h6_naranja h6 {
+  font-weight: bolder;
+  font-size: 33px;
+  line-height: 0.9;
 }
 
-.card {
+.solucion_desplegable p {
   color: #ffffff;
   line-height: 0.5;
 }
+.solucion_botones {
+  padding-bottom: 150px;
+}
 
-
-
-
-/* ------------------SECCION FACIL-------------- */
+/* ------------------SECCION FACIL DE USAR-------------- */
 .facil_de_usar {
   background-color: rgb(35, 35, 35);
 }
 
-.facil_parrafos {
-  display: flex;
-  justify-content: space-around;
-}
-.video-container {
-  display: flex;
-  justify-content: center; /* Alinea horizontalmente */
-}
-
-.video-container video {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+.facil-de-usar-titulo1 {
+  padding-left: 70px;
+  font-size: 3em;
+  color: #ffffff;
+  font-weight: bold;
+  padding-top: 60px;
+  line-height: 0.6;
 }
 
-.facil_parrafos,
+.facil-de-usar-titulo2 {
+  padding-left: 70px;
+  font-size: 3em;
+  color: #f3924b;
+  font-weight: bold;
+}
+.tabla {
+
+  /* color: white;
+  padding-top: 40px; */
+}
+
+.linea_blanca2 {
+
+
+}
+.tabla {
+  position: relative;
+  width: 100%;
+ 
+  padding: 0 70px;
+}
+
 .facil_parrafos_en_orden {
   display: flex;
+  /* justify-content: center; */
+  padding: 40px 70px 40px 0px;
+  /* flex-direction: row; */
   flex-wrap: wrap;
-  justify-content: center;
 }
 
-.facil_parrafos > div,
-.facil_parrafos_en_orden > div {
-  flex: 0 0 calc(33% - 20px); /* 33.33% width for each item with some spacing */
-  margin-bottom: 20px; /* Adjust margin between items */
+.facil_parrafos{
+  display: flex;
+  /* justify-content: center; */
+  padding: 17px 70px 0px 0px;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
 }
 
-/* Agrega líneas blancas entre las filas */
-.facil_parrafos_en_orden::after {
-  content: "";
-  display: block;
-  width: 95%;
-  height: 1px;
+.facil_parrafos_columna{
+  padding-right: 200px;
+}
+
+.linea_blanca2 {
+  width: 100%;
+  height: 2px; /* Ajusta el grosor de la línea */
   background-color: white;
-  margin: 20px 0; /* Ajusta el espacio entre las líneas según sea necesario */
 }
 
-.facil_columna2 {
-  line-height: 0.8;
+.punto {
+  position: absolute;
+  width: 10px; /* Ancho del punto */
+  height: 10px; /* Altura del punto */
+  background-color: rgb(255, 128, 0); /* Color del punto */
+  border-radius: 50%; /* Para hacer el punto redondo */
 }
 
-.facil_columna3 {
-  line-height: 0.2;
+.primero {
+  top: -4px; /* Ajusta la posición verticalmente */
+  left: 4.5%; /* Alinea el primer punto al principio de la línea */
 }
 
-@media (max-width: 768px) {
-  .facil_parrafos > div,
-  .facil_parrafos_en_orden > div {
-    flex: 0 0 calc(50% - 20px); /* 50% width for each item on smaller screens */
-  }
+.segundo {
+  top: -4px; /* Ajusta la posición verticalmente */
+  left: 34%; /* Coloca el segundo punto a un tercio de la longitud de la línea */
 }
+
+.tercero {
+  top: -4px; /* Ajusta la posición verticalmente */
+  left: 68%; /* Coloca el tercer punto a dos tercios de la longitud de la línea */
+}
+
+
+.video-container {
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  padding: 0 70px; /* 70px de padding a la izquierda y a la derecha */
+  margin-top: 70px; /* Agrega espacio adicional arriba */
+}
+
+.video-terruneo {
+  border: 1px solid #ccc;
+  border-radius: 13px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: -webkit-fill-available;
+    height: auto; /* Cambia el alto del video según tus necesidades */
+}
+
+
+
+.linea_blanca {
+  width: 100%; /* Ancho de la línea blanca */
+  height: 1px; /* Grosor de la línea */
+  background-color: white; /* Color de la línea */
+  margin: 0 auto; /* Centra la línea en el contenedor */
+}
+.numero {
+  font-size: 2em;
+  
+}
+.columna-3 p {
+  font-size: 2.0em;
+  line-height: 0.6;
+}
+.facil_parrafos_en_orden h3 {
+  font-size: 3.1rem;
+}
+.columna-1 {
+  flex: 0 1 10%; /* Columna 1 ocupa el 10% del espacio */
+}
+
+.columna-2 {
+  flex: 1 1 25%; /* Columna 2 ocupa el 25% del espacio */
+}
+
+.columna-3 {
+  flex: 3; /* Columna 3 ocupa el resto del espacio */
+}
+
 /* --------------CAMPOS DE ACCION-------------- */
 .campos_de_accion {
   background-color: rgb(35, 35, 35);
 }
 
+.explora-nuestros {
+  padding-left: 70px;
+  font-size: 3em;
+  color: #ffffff;
+  font-weight: bold;
+  padding-top: 60px;
+  line-height: 0.6;
+}
+
+.camposAccion {
+  padding-left: 70px;
+  font-size: 3em;
+  color: #f3924b;
+  font-weight: bold;
+}
+
+#carouselExampleCaptions.carousel {
+  padding: 10px 35px 10px 35px;
+}
+
+.carousel-subtitulos {
+  font-size: 32px;
+  padding-bottom: 60px;
+}
+.carousel-parrafos p {
+  font-size: 24px;
+  line-height: 0.7;
+}
+.carousel-parrafos {
+  padding-bottom: 135px;
+}
+
+.slide1 {
+  background-image: url("./assets/carrousel/luxa.org-opacity-changed-Medio\ ambiente\ 2.jpg");
+  background-size: cover;
+  height: 80vh; /* Ajustar altura de la imagen */
+  background-color: rgba(255, 255, 255, 0.9); /* RGBA con opacidad del 50% */
+}
+
+.slide2 {
+  background-image: url("./assets/carrousel/luxa.org-opacity-changed-Gestión\ de\ riesgo\ 6.jpg");
+
+  background-size: cover;
+  height: 80vh; /* Ajustar altura de la imagen */
+}
+
+.slide3 {
+  background-image: url("./assets/carrousel/luxa.org-opacity-changed-Medio\ ambiente\ 2.jpg");
+
+  background-size: cover;
+  height: 80vh; /* Ajustar altura de la imagen */
+}
+
+.slide4 {
+  background-image: url("../assets/carrousel/luxa.org-opacity-changed-Cartografia\ 3.jpg");
+}
+
+.slide5 {
+  background-image: url("../assets/carrousel/luxa.org-opacity-changed-Suelo\ 4.jpg");
+}
+
+.slide6 {
+  background-image: url("../assets/carrousel/luxa.org-opacity-changed-Atmósfera\ 5\ \(1\).jpg");
+}
+
+.slide7 {
+  background-image: url("../assets/carrousel/luxa.org-opacity-changed-Gestión\ de\ riesgo\ 6.jpg");
+}
+
 /* --------------FORMULARIO DE CONTACTO-------------- */
 .contacto {
-  background-image: url("./assets/Vector.png");
+  background-image: url("./assets/Group\ 1000001931.png");
+  background-size: cover;
   background-color: black;
+}
+
+.contactanos {
+  padding-left: 70px;
+  font-size: 3em;
+  color: #f3924b;
+  font-weight: bold;
+  padding-top: 60px;
 }
 
 .contacto_titulo {
@@ -231,20 +447,15 @@ nav {
 }
 
 .contacto_formulario {
-  flex: 40%; /* El 40% del espacio disponible */
-}
-.contacto_formulario {
-  display: flex;
-  flex-direction: column;
-  background-color: black;
-  color: white;
-  padding: 20px;
+  flex: 45%; /* El 40% del espacio disponible */
 }
 
-.form-group {
+.form-group,
+.form-group2 {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px; /* Espacio entre cada grupo de etiqueta e input */
+  padding-right: 35px;
+  margin-left: 35px;
 }
 
 .form-group label {
@@ -252,7 +463,7 @@ nav {
 }
 
 .form-group input,
-.form-group textarea {
+.form-group2 textarea {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid white;
@@ -260,11 +471,18 @@ nav {
   padding: 5px;
 }
 
+.form-group2 {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 200px;
+  padding-top: 30px;
+}
+
 .contacto_formulario button {
   background-color: white;
   color: black;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 45px;
   cursor: pointer;
 }
 
@@ -273,43 +491,75 @@ nav {
 }
 
 .contacto_formulario {
+  padding-left: 40px;
+  padding-top: 100px;
+  border-radius: 18px;
+  background-color: #0f0e0e;
+  margin-top: 70px;
+  color: white;
+  margin-bottom: 60px;
+  padding-bottom: 40px;
+  padding-right: 40px;
+  margin-right: 70px;
+}
+
+.formulario-fila1,
+.formulario-fila2 {
   display: flex;
-  flex-wrap: wrap;
-}
-
-.form-group {
-  margin-bottom: 10px;
-  flex: 0 0 100%;
-}
-
-.form-group.inline {
-  flex: 0 0 50%;
-}
-
-.form-group.inline label {
-  display: inline-block;
-  width: 30%; /* Ajusta el ancho de las etiquetas según sea necesario */
-}
-
-.form-group.inline input,
-.form-group.inline textarea {
-  display: inline-block;
-  width: 65%; /* Ajusta el ancho de los campos de entrada según sea necesario */
+  padding-top: 30px;
 }
 
 button[type="submit"] {
   border-radius: 22px; /* Ajusta el valor según sea necesario */
   /* Otros estilos del botón */
 }
-
-/* --------------FOOTER-------------- */
-
-.logo_atic {
-  width: 134px;
+.formulario-boton {
+  float: right;
 }
 
+/* --------------FOOTER-------------- */
 /* Estilos personalizados */
-footer {
-  background-color: #515151; /* Negro */
+.footer {
+  background-color: #1c1c1c; /* Negro */
   color: #fff; /* Blanco */
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  padding-top: 80px;
+
+  padding-bottom: 40px;
+}
+
+.logo_atic {
+  width: 217px;
+  padding-bottom: 40px;
+  padding-top: 15px;
+}
+
+.logo-terruneo-footer {
+  width: 94px;
+  padding-bottom: 40px;
+}
+
+.footer-parrafos a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 120px;
+}
+
+.footer-right {
+  padding-right: 110px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+}
+.footer-terruneo {
+  display: flex;
 }
