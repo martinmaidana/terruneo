@@ -614,9 +614,9 @@ button[type="submit"] {
   .imagen-header {
     height: 230px;
   }
-.h6_naranja{
-  font-size: 22px;
-}
+  .h6_naranja {
+    font-size: 22px;
+  }
   .teledeteccion_titulo {
     margin-bottom: 2.5em;
     line-height: 0.9px;
@@ -714,7 +714,7 @@ button[type="submit"] {
   .facil_parrafos_en_orden h3 {
     font-size: 1.8em;
     line-height: 20px;
-}
+  }
   .tabla,
   .facil_parrafos {
     display: none;
@@ -867,5 +867,54 @@ button[type="submit"] {
   }
   .footer-bottom {
     margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 509px) {
+  .teledeteccion_titulo_blanco {
+    font-size: 1.45em;
+  }
+  .teledeteccion_titulo_naranja {
+    font-size: 1.45em;
+  }
+  .teledeteccion_parrafo {
+    line-height: 2px;
+    font-size: 0.8em;
+  }
+  .imagen_teledeteccion {
+    height: auto;
+  }
+  .teledeteccion {
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  .reconocimiento {
+    line-height: 27px;
+  }
+  .facil_parrafos_en_orden {
+    padding: 7px 0px 40px 0px;
+  }
+  .columna-3 p {
+    font-size: 1em;
+    line-height: 0.8em;
+  }
+  .carousel-subtitulos {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .carousel-parrafos p {
+    font-size: 14px;
+    line-height: 0.9em;
+  }
+  .contacto_formulario button {
+    margin: 0px;
+  }
+
+  .carousel-parrafos {
+    padding-bottom: 0px;
+  }
+
+  .footer-bottom {
+    text-align: center;
   }
 }
