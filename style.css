@@ -566,7 +566,7 @@ button[type="submit"] {
 
   .cards-imagen1,
   .cards-imagen2 {
-    padding-right: 24px;
+    padding-right: 0px;
   }
 
   .contacto_titulo {
@@ -577,7 +577,7 @@ button[type="submit"] {
 }
 /*--------------- MEDIA QUERIES PHONE------------- */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 576px) {
   .nav_terruneo {
     padding-top: 20px;
     padding-left: 20px;
@@ -647,7 +647,7 @@ button[type="submit"] {
     flex-direction: column;
   }
 
-  .cards-imagenes{
+  .cards-imagenes {
     padding: 15px 30px 15px 30px;
   }
   .imagen_teledeteccion {
@@ -656,6 +656,95 @@ button[type="submit"] {
     border-radius: 13px;
   }
 
+  /* --------------SOLUCION MAS COMPLETA ------------------------*/
+  .solucion_completa {
+    text-align: center;
+
+    padding-top: 20px;
+    padding-left: 0px;
+  }
+
+  .solucion_h6_naranja {
+    margin-top: 30px;
+    margin-right: 0px;
+  }
+
+  .reconocimiento {
+    font-size: 2em;
+  }
+  .solucion_botones {
+    display: flex;
+    padding-bottom: 39px;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  /* ------------------SECCION FACIL-------------------------- */
+  .facil-titulos {
+    text-align: center;
+  }
+  .facil-de-usar-titulo1 {
+    padding-left: 0px;
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: bold;
+    padding-top: 60px;
+    line-height: 0.6;
+  }
+  .facil-de-usar-titulo2 {
+    padding-left: 0px;
+    font-size: 2em;
+    color: #f3924b;
+    font-weight: bold;
+  }
+  .tabla,
+  .facil_parrafos {
+    display: none;
+  }
+  .video-container {
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px;
+    margin-top: 45px;
+  }
+
+  .tabla1 {
+    padding: 0 20px;
+    color: white;
+    padding-top: 20px;
+  }
+  .facil_parrafos_en_orden {
+    display: flex;
+    /* justify-content: center; */
+    padding: 0px 0px 40px 0px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .numero {
+    display: none;
+  }
+  .columna-2 {
+    text-align: center;
+  }
+
+  .columna-3 p {
+    margin-top: 10px;
+    /* padding-top: 6px; */
+    font-size: 1.7em;
+    line-height: 0.6;
+  }
+
+  /* .------------EXPLORA NUESTROS CAMPOS DE ACCION -------------*/
+  .explora-nuestros,
+  .camposAccion {
+    text-align: center;
+    padding-left: 0px;
+    font-size: 2em;
+  }
+
+  #carouselExampleCaptions.carousel {
+    padding: 10px 20px 10px 20px;
+}
   /* ------------------FORMULARIO DE CONTACTO------------------ */
   .contacto_titulo {
     display: flex;
@@ -696,18 +785,17 @@ button[type="submit"] {
     padding-right: 20px;
     margin-right: 10px;
   }
- .contacto_formulario button{
-
-  margin: 34px;
-  background-color: white;
-  color: black;
-  border: none;
-  padding: 14px 45px;
-  cursor: pointer;
- }
- .formulario-boton {
-  float: none;
-}
+  .contacto_formulario button {
+    margin: 34px;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 14px 45px;
+    cursor: pointer;
+  }
+  .formulario-boton {
+    float: none;
+  }
   /* ------------FOOTER----------------- */
   .footer {
     background-color: #1c1c1c;
