@@ -151,14 +151,14 @@ nav {
   color: white;
   padding-top: 40px;
 }
-.cards{
-  display:flex;
-  justify-content:space-between;
+.cards {
+  display: flex;
+  justify-content: space-between;
   padding: 0px 70px 0px 70px;
- 
 }
-.card_fila1, .cards_fila2{
-  width: -webkit-fill-available ;
+.card_fila1,
+.cards_fila2 {
+  width: -webkit-fill-available;
 }
 .imagen_teledeteccion {
   height: 250px;
@@ -166,10 +166,10 @@ nav {
   border-radius: 27px;
 }
 
-.cards-imagen1, .cards-imagen2{
-padding-right: 70px;
+.cards-imagen1,
+.cards-imagen2 {
+  padding-right: 70px;
 }
-
 
 .texto_blanco_cards {
   color: white;
@@ -179,8 +179,6 @@ padding-right: 70px;
 .texto_naranja {
   color: #f3924b; /* Cambiando a color naranja */
 }
-
-
 
 /* -----------------HEADER--------------- */
 
@@ -237,19 +235,16 @@ padding-right: 70px;
   font-weight: bold;
 }
 .tabla {
-
   /* color: white;
   padding-top: 40px; */
 }
 
 .linea_blanca2 {
-
-
 }
 .tabla {
   position: relative;
   width: 100%;
- 
+
   padding: 0 70px;
 }
 
@@ -261,7 +256,7 @@ padding-right: 70px;
   flex-wrap: wrap;
 }
 
-.facil_parrafos{
+.facil_parrafos {
   display: flex;
   /* justify-content: center; */
   padding: 17px 70px 0px 0px;
@@ -269,7 +264,7 @@ padding-right: 70px;
   flex-wrap: wrap;
 }
 
-.facil_parrafos_columna{
+.facil_parrafos_columna {
   padding-right: 200px;
 }
 
@@ -302,7 +297,6 @@ padding-right: 70px;
   left: 68%; /* Coloca el tercer punto a dos tercios de la longitud de la línea */
 }
 
-
 .video-container {
   display: flex;
   justify-content: center; /* Centra el contenido horizontalmente */
@@ -315,10 +309,8 @@ padding-right: 70px;
   border-radius: 13px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   width: -webkit-fill-available;
-    height: auto; /* Cambia el alto del video según tus necesidades */
+  height: auto; /* Cambia el alto del video según tus necesidades */
 }
-
-
 
 .linea_blanca {
   width: 100%; /* Ancho de la línea blanca */
@@ -328,7 +320,6 @@ padding-right: 70px;
 }
 .numero {
   font-size: 2em;
-  
 }
 .columna-3 p {
   font-size: 1.9em;
@@ -563,122 +554,176 @@ button[type="submit"] {
 .footer-terruneo {
   display: flex;
 }
-
-/*--------------- MEDIA QUERIES MOBILE------------- */
-
-@media screen and (max-width: 600px) {
-  /* Estilos a aplicar cuando el ancho de la pantalla es máximo de 412px */
-  .nav_terruneo {
-    padding-top: 10px;
-    /* Agrega aquí todos los estilos que deseas aplicar en este punto */
-    padding-left: 0px;
+/* ----------------MEDIA QUERIES TABLET --------------*/
+@media screen and (max-width: 1200px) {
+  cards {
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 0px 10px 0px 10px;
+    /* flex-direction: column; */
+    align-items: stretch;
   }
 
-  .blanco{
+  .cards-imagen1,
+  .cards-imagen2 {
+    padding-right: 24px;
+  }
+
+  .contacto_titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/*--------------- MEDIA QUERIES PHONE------------- */
+
+@media screen and (max-width: 800px) {
+  .nav_terruneo {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  .blanco {
     font-size: 2em;
   }
-  .naranja{
-    font-size:2em;
+  .naranja {
+    font-size: 2em;
   }
 
- .titulo_principal {
-    padding-top: 2px;
+  .titulo_principal {
+    padding-top: 12px;
     padding-left: 2px;
-}
-.titulo_blanco {
-  color: white;
-  font-weight: 800;
-  font-size: 1.3em;
-  text-align: center;
-}
+  }
+  .titulo_blanco {
+    color: white;
+    font-weight: 800;
+    font-size: 2.5em;
+    text-align: center;
+  }
 
-.button_conocenos {
-  border-radius: 21px;
-  margin: 2px auto 10px auto; /* Alinear en el centro horizontal y aplicar márgenes superior e inferior */
-  width: 108px;
-  height: 35px;
-  font-size: 12px;
-  color: rgb(44, 44, 44);
-  background-color: rgb(204, 204, 204);
-  display: block; /* Para que el margen automático funcione, necesitamos cambiar la visualización del elemento */
-}
-.imagen-header{
-  height: 140px;
-}
-.teledeteccion_titulo_blanco {
-  font-size: 1em;
-}
+  .button_conocenos {
+    border-radius: 21px;
+    margin: 16px auto 20px auto;
+    width: 113px;
+    height: 44px;
+    font-size: 12px;
+    color: rgb(44, 44, 44);
+    background-color: rgb(204, 204, 204);
+    display: block;
+  }
+  .imagen-header {
+    height: 230px;
+  }
 
-.teledeteccion_titulo_naranja {
-  font-size: 1em;
-}
+  .teledeteccion_titulo {
+    margin-bottom: 2.5em;
+    line-height: 0.9px;
+  }
+  .teledeteccion_titulo_blanco {
+    font-size: 2em;
+  }
+
+  .teledeteccion_titulo_naranja {
+    font-size: 2em;
+  }
+
+  .teledeteccion_parrafo {
+    line-height: 5px;
+    font-size: 1.2em;
+  }
   .teledeteccion {
     display: grid;
-    /* justify-content: end; */
-    margin-top: 10px;
-    margin-right: 2px;
-    margin-bottom: 10px;
+    justify-content: center;
+    /* margin-top: 45px; */
+    /* margin-right: 2px; */
+    margin-bottom: 25px;
     justify-items: center;
-}
+  }
 
-.cards{
-  display: flex;
-  justify-content: space-between;
-  padding: 2px;
-  flex-direction: column;
-}
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    flex-direction: column;
+  }
 
-.imagen_teledeteccion {
-  height: 210px;
-  width: -webkit-fill-available;
-  border-radius: 13px;
-}
+  .imagen_teledeteccion {
+    height: 210px;
+    width: -webkit-fill-available;
+    border-radius: 13px;
+  }
 
-/* ------------------FORMULARIO DE CONTACTO------------------ */
-.contacto_titulo {
-  display: flex;
-  flex-direction: column;
-}
+  /* ------------------FORMULARIO DE CONTACTO------------------ */
+  .contacto_titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.contactanos {
-  padding-left: 10px;
-  font-size: 2em;
-  color: #f3924b;
-  font-weight: bold;
-  padding-top: 15px;
-}
+  .contactanos {
+    padding-left: 10px;
+    font-size: 2em;
+    color: #f3924b;
+    font-weight: bold;
+    padding-top: 15px;
+  }
 
-/* ------------FOOTER----------------- */
-.footer {
-  background-color: #1c1c1c;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 30px;
-  flex-direction: column;
-  align-items: center;
-}
-.logo-terruneo-footer {
-  width: 48px;
-  padding-bottom: 19px;
-}
-.logo_atic {
-  width: 149px;
-  padding-bottom: 23px;
-  padding-top: 6px;
-}
-.footer-right {
-  padding-right: 0px;
-}
-.footer-parrafos {
-  text-align: center;
-}
+  .formulario-fila1,
+  .formulario-fila2 {
+    display: flex;
+    padding-top: 0px;
+    flex-direction: column;
+  }
 
+  .form-group2 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    padding-top: 16px;
+  }
+  .contacto_formulario {
+    padding-left: 20px;
+    padding-top: 50px;
+    border-radius: 18px;
+    background-color: #0f0e0e;
+    margin-top: 40px;
+    color: white;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    margin-right: 10px;
+  }
+
+  /* ------------FOOTER----------------- */
+  .footer {
+    background-color: #1c1c1c;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo-terruneo-footer {
+    width: 48px;
+    padding-bottom: 19px;
+  }
+  .logo_atic {
+    width: 149px;
+    padding-bottom: 23px;
+    padding-top: 6px;
+  }
+  .footer-right {
+    padding-right: 0px;
+  }
+  .footer-parrafos {
+    text-align: center;
+  }
 }
