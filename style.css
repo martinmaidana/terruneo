@@ -566,7 +566,7 @@ button[type="submit"] {
 
 /*--------------- MEDIA QUERIES MOBILE------------- */
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 600px) {
   /* Estilos a aplicar cuando el ancho de la pantalla es máximo de 412px */
   .nav_terruneo {
     padding-top: 10px;
@@ -605,7 +605,33 @@ button[type="submit"] {
 .imagen-header{
   height: 140px;
 }
-
+.teledeteccion_titulo_blanco {
+  font-size: 1em;
 }
 
+.teledeteccion_titulo_naranja {
+  font-size: 1em;
+}
+  .teledeteccion {
+    display: grid;
+    /* justify-content: end; */
+    margin-top: 10px;
+    margin-right: 2px;
+    margin-bottom: 10px;
+    justify-items: center;
+}
 
+.cards{
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+  flex-direction: column;
+}
+
+.imagen_teledeteccion {
+  height: 210px;
+  width: -webkit-fill-available;
+  border-radius: 13px;
+}
+
+}
