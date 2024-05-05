@@ -1,1 +1,3 @@
-
+function mostrarAlerta() {
+    alert("pendiente");
+}

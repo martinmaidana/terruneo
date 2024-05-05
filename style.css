@@ -38,15 +38,24 @@ nav {
 }
 
 .button_conocenos {
+ color:black;
   border-radius: 21px;
   margin-top: 22px;
   margin-left: 40px;
-  margin-bottom: 160px;
+  margin-bottom: 110px;
   width: 230px;
   height: 50px;
   font-size: 22px; /* Tamaño de la fuente */
   color: rgb(44, 44, 44);
   background-color: rgb(204, 204, 204);
+}
+
+.button_conocenos a {
+  text-decoration: none; /* Quita la subrayado del enlace */
+}
+
+.button_conocenos:hover {
+  text-decoration: none; /* Quita la subrayado del enlace al pasar el mouse */
 }
 
 .titulo_blanco {
@@ -193,7 +202,7 @@ nav {
   line-height: 0.5px;
   color: rgb(243, 146, 75);
   font-weight: 900;
-  margin-top: 300px;
+  /* margin-top: 300px; */
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -205,13 +214,32 @@ nav {
   font-size: 33px;
   line-height: 0.9;
 }
+.soluciones-desplegables{
+  display: flex;
+}
 
 .solucion_desplegable p {
   color: #ffffff;
   line-height: 0.5;
 }
+.tarjeta {
+  background-color: black;
+  border-radius: 7px;
+  color: white;
+  margin-top: 10px;
+  padding: 10px;
+}
+
 .solucion_botones {
-  padding-bottom: 150px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.boton-solucion {
+  display: flex;
+  flex-direction: column;
 }
 
 /* ------------------SECCION FACIL DE USAR-------------- */
@@ -289,12 +317,12 @@ nav {
 
 .segundo {
   top: -4px; /* Ajusta la posición verticalmente */
-  left: 34%; /* Coloca el segundo punto a un tercio de la longitud de la línea */
+  left: 36%; /* Coloca el segundo punto a un tercio de la longitud de la línea */
 }
 
 .tercero {
   top: -4px; /* Ajusta la posición verticalmente */
-  left: 68%; /* Coloca el tercer punto a dos tercios de la longitud de la línea */
+  left: 72%; /* Coloca el tercer punto a dos tercios de la longitud de la línea */
 }
 
 .video-container {
@@ -555,7 +583,7 @@ button[type="submit"] {
   display: flex;
 }
 /* ----------------MEDIA QUERIES TABLET --------------*/
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   cards {
     display: flex;
     /* justify-content: space-between; */

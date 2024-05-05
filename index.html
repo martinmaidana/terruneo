@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Titillium+Web&display=swap"
         rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="./style.css" rel="stylesheet">
 </head>
 
@@ -33,11 +34,13 @@
                 <h2 class="titulo_blanco">GESTIONÁ EL TERRIOTORIO</h2>
                 <h2 class="titulo_blanco"> DESDE LAS ALTURAS</h2>
             </div>
-            <button type="button" class="btn btn-secondary button_conocenos">CONOCENOS</button>
+            <button type="button" class="btn btn-secondary button_conocenos">
+                <a href="#teledeteccionTitulo">CONOCENOS</a>
+            </button>
             <img src="./assets/header-web.jpg" class="imagen-header alt=" headere-web"
                 style="width: -webkit-fill-available">
             <div class="teledeteccion ">
-                <div class="teledeteccion_titulo ">
+                <div class="teledeteccion_titulo" id="teledeteccionTitulo">
                     <h2 class="teledeteccion_titulo_blanco">
                         DESCUBRÍ EL ALCANCE DE LA </h2>
                     <h2 class="teledeteccion_titulo_naranja">TELEDETECCIÓN MEDIANTE</h2>
@@ -130,33 +133,15 @@
                 <h2 class="reconocimiento">PARA EL RECONOCIMIENTO</h2>
                 <h2 class="reconocimiento">DEL TERRITORIO</h2>
             </div>
-            <div>
-                <div>
-                    <div>
-                        <div class="solucion_botones">
-                            <button class="solucion_h6_naranja bg-transparent" type="button" data-toggle="collapse"
-                                data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
-                                <p>SOLUCION INNOVADORA</p>
-                                <p>PARA PROCESAR</p>
-                                <p>IMAGENES AEREAS</p>
-                            </button>
-
-                            <button class="solucion_h6_naranja" type="button">
-                                <p>OFRECEMOS UNA</p>
-                                <p>GESTION INTEGRAL</p>
-                                <p>DEL TERRITORIO</p>
-                            </button>
-                            <button class="solucion_h6_naranja" type="button">
-                                <p>AUMENTO EXPONENCIAL</p>
-                                <p>EN EL POTENCIAL DE</p>
-                                <p>TUS DATOS</p>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div>
+            <div class="solucion_botones">
+                <div class="boton-solucion">
+                    <button class="solucion_h6_naranja bg-transparent" type="button" data-toggle="collapse"
+                        data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+                        <h6>SOLUCION INNOVADORA</h6>
+                        <h6>PARA PROCESAR</h6>
+                        <h6>IMAGENES AEREAS</h6>
+                    </button>
+                    <div class="solucion-1">
                         <div class="collapse" id="collapseExample">
                             <div class="solucion_desplegable card card-body bg-transparent">
                                 <p>Nuestros modernos y confiables</p>
@@ -168,9 +153,16 @@
                                 <p>tecnicas tradicionales</p>
                             </div>
                         </div>
-
                     </div>
-                    <div>
+                </div>
+                <div class="boton-solucion">
+                    <button class="solucion_h6_naranja" type="button" data-toggle="collapse"
+                        data-target="#collapseExample2">
+                        <h6>OFRECEMOS UNA</h6>
+                        <h6>GESTION INTEGRAL</h6>
+                        <h6>DEL TERRITORIO</h6>
+                    </button>
+                    <div class="solucion-1">
                         <div class="collapse" id="collapseExample2">
                             <div class="solucion_desplegable card card-body bg-transparent">
                                 <p>La detección de objetos tales</p>
@@ -181,7 +173,15 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                </div>
+                <div class="boton-solucion">
+                    <button class="solucion_h6_naranja" type="button" data-toggle="collapse"
+                        data-target="#collapseExample3">
+                        <h6>AUMENTO EXPONENCIAL</h6>
+                        <h6>EN EL POTENCIAL DE</h6>
+                        <h6>TUS DATOS</h6>
+                    </button>
+                    <div class="solucion-1">
                         <div class="collapse" id="collapseExample3">
                             <div class="solucion_desplegable card card-body bg-transparent">
                                 <p>Con Terruneo mejorás la</p>
@@ -195,6 +195,13 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="soluciones-desplegables">
+
+              
+             
+            </div>
             </div>
 
 
@@ -346,7 +353,7 @@
 
         </section>
 
-        <section class="campos_de_accion">
+        <section class="campos_de_accion" id="campos_de_accion">
             <div class="contacto_titulo_formulario">
                 <h2 class="explora-nuestros">EXPLORA NUESTROS</h2>
                 <h2 class="camposAccion">CAMPOS DE ACCION</h2>
@@ -399,7 +406,7 @@
             </div>
 
     </main>
-    <section class="contacto">
+    <section class="contacto" id="contacto">
         <div class="contacto_titulo">
             <div class="contacto_titulo_formulario">
                 <h2 class="contactanos">CONTACTANOS</h2>
@@ -458,30 +465,40 @@
                 </div>
 
                 <p class="footer-parrafos">
-                    <a href="#!">Servicios</a>
+                    <a href="#campos_de_accion">Servicios</a>
                 </p>
                 <p class="footer-parrafos">
-                    <a href="#!">Nosotros</a>
+                    <a href="#" onclick="mostrarAlerta()">Nosotros</a>
                 </p>
+
+                
                 <p class="footer-parrafos">
-                    <a href="#!">Contacto</a>
+                    <a href="#contacto">Contacto</a>
                 </p>
+                
 
             </div>
 
             <div class="footer-right">
                 <div>
-                <img src="./assets/logo.png" class="logo_atic" alt="logoAtic">
-            </div>
-                <div>
-                    <i class=" bi bi-app"></i>
-                    <p class="footer-parrafos"> 011 6466 0228</p>
+                    <img src="./assets/logo.png" class="logo_atic" alt="logoAtic">
                 </div>
                 <div>
-                    <i class=" bi bi-envelope"></i>
-                    <p class="footer-parrafos"> contacto@atic.com
+                    <i class="bi bi-app"></i>
+                    <!-- Enlace para llamar -->
+                    
+                    <!-- Enlace para WhatsApp -->
+                    <a href="https://wa.me/541164660228" target="_blank" class="footer-parrafos">011 6466 0228</a>
+                </div>
+                <div>
+                    
+                    <p class="footer-parrafos">
+                        <a href="mailto:contacto@atic.com">contacto@atic.com</a>
+                        
                     </p>
                 </div>
+                
+                
             </div>
 
         </div>
@@ -494,11 +511,15 @@
     </footer>
 
     <!-- Footer -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
