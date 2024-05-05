@@ -256,7 +256,7 @@ padding-right: 70px;
 .facil_parrafos_en_orden {
   display: flex;
   /* justify-content: center; */
-  padding: 40px 70px 40px 0px;
+  padding: 40px 0px 40px 0px;
   /* flex-direction: row; */
   flex-wrap: wrap;
 }
@@ -331,7 +331,7 @@ padding-right: 70px;
   
 }
 .columna-3 p {
-  font-size: 2.0em;
+  font-size: 1.9em;
   line-height: 0.6;
 }
 .facil_parrafos_en_orden h3 {
@@ -371,7 +371,7 @@ padding-right: 70px;
 }
 
 #carouselExampleCaptions.carousel {
-  padding: 10px 35px 10px 35px;
+  padding: 10px 70px 10px 70px;
 }
 
 .carousel-subtitulos {
@@ -563,3 +563,49 @@ button[type="submit"] {
 .footer-terruneo {
   display: flex;
 }
+
+/*--------------- MEDIA QUERIES MOBILE------------- */
+
+@media screen and (max-width: 412px) {
+  /* Estilos a aplicar cuando el ancho de la pantalla es máximo de 412px */
+  .nav_terruneo {
+    padding-top: 10px;
+    /* Agrega aquí todos los estilos que deseas aplicar en este punto */
+    padding-left: 0px;
+  }
+
+  .blanco{
+    font-size: 2em;
+  }
+  .naranja{
+    font-size:2em;
+  }
+
+ .titulo_principal {
+    padding-top: 2px;
+    padding-left: 2px;
+}
+.titulo_blanco {
+  color: white;
+  font-weight: 800;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.button_conocenos {
+  border-radius: 21px;
+  margin: 2px auto 10px auto; /* Alinear en el centro horizontal y aplicar márgenes superior e inferior */
+  width: 108px;
+  height: 35px;
+  font-size: 12px;
+  color: rgb(44, 44, 44);
+  background-color: rgb(204, 204, 204);
+  display: block; /* Para que el margen automático funcione, necesitamos cambiar la visualización del elemento */
+}
+.imagen-header{
+  height: 140px;
+}
+
+}
+
+
