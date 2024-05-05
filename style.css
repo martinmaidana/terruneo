@@ -634,4 +634,51 @@ button[type="submit"] {
   border-radius: 13px;
 }
 
+/* ------------------FORMULARIO DE CONTACTO------------------ */
+.contacto_titulo {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactanos {
+  padding-left: 10px;
+  font-size: 2em;
+  color: #f3924b;
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+/* ------------FOOTER----------------- */
+.footer {
+  background-color: #1c1c1c;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-terruneo-footer {
+  width: 48px;
+  padding-bottom: 19px;
+}
+.logo_atic {
+  width: 149px;
+  padding-bottom: 23px;
+  padding-top: 6px;
+}
+.footer-right {
+  padding-right: 0px;
+}
+.footer-parrafos {
+  text-align: center;
+}
+
 }
