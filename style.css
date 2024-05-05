@@ -656,6 +656,10 @@ button[type="submit"] {
     border-radius: 13px;
   }
 
+  .texto_blanco_cards{
+    line-height: 1;
+  }
+
   /* --------------SOLUCION MAS COMPLETA ------------------------*/
   .solucion_completa {
     text-align: center;
@@ -665,8 +669,14 @@ button[type="submit"] {
   }
 
   .solucion_h6_naranja {
-    margin-top: 30px;
+    line-height: 7.5px;
+    color: rgb(243, 146, 75);
+    font-weight: 900;
+    margin-top: 0px;
+    padding-top: 35px;
+    font-size: 26px;
     margin-right: 0px;
+    text-align: center;
   }
 
   .reconocimiento {
@@ -697,6 +707,10 @@ button[type="submit"] {
     color: #f3924b;
     font-weight: bold;
   }
+
+ .facil_parrafos_en_orden h3 {
+    font-size: 1.8em;
+}
   .tabla,
   .facil_parrafos {
     display: none;
@@ -720,17 +734,18 @@ button[type="submit"] {
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .numero {
+  .columna-1 {
     display: none;
   }
   .columna-2 {
     text-align: center;
+    margin-top: 10px;
   }
 
   .columna-3 p {
     margin-top: 10px;
     /* padding-top: 6px; */
-    font-size: 1.7em;
+    font-size: 1.5em;
     line-height: 0.6;
   }
 
@@ -744,6 +759,20 @@ button[type="submit"] {
 
   #carouselExampleCaptions.carousel {
     padding: 10px 20px 10px 20px;
+}
+.slide1{
+  height: 50vh;
+}
+.carousel-subtitulos {
+  font-size: 25px;
+  padding-bottom: 40px;
+}
+.carousel-parrafos {
+  padding-bottom: 35px;
+}
+.carousel-parrafos p {
+  font-size: 17px;
+  line-height: 0.7;
 }
   /* ------------------FORMULARIO DE CONTACTO------------------ */
   .contacto_titulo {
@@ -827,5 +856,8 @@ button[type="submit"] {
   }
   .footer-parrafos {
     text-align: center;
+  }
+  .footer-bottom{
+    margin-bottom: 15px;
   }
 }
