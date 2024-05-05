@@ -584,10 +584,10 @@ button[type="submit"] {
   }
 
   .blanco {
-    font-size: 2em;
+    font-size: 3em;
   }
   .naranja {
-    font-size: 2em;
+    font-size: 3em;
   }
 
   .titulo_principal {
@@ -603,10 +603,10 @@ button[type="submit"] {
 
   .button_conocenos {
     border-radius: 21px;
-    margin: 16px auto 20px auto;
-    width: 113px;
+    margin: 30px auto 25px auto;
+    width: 130px;
     height: 44px;
-    font-size: 12px;
+    font-size: 17px;
     color: rgb(44, 44, 44);
     background-color: rgb(204, 204, 204);
     display: block;
@@ -614,7 +614,9 @@ button[type="submit"] {
   .imagen-header {
     height: 230px;
   }
-
+.h6_naranja{
+  font-size: 22px;
+}
   .teledeteccion_titulo {
     margin-bottom: 2.5em;
     line-height: 0.9px;
@@ -656,7 +658,7 @@ button[type="submit"] {
     border-radius: 13px;
   }
 
-  .texto_blanco_cards{
+  .texto_blanco_cards {
     line-height: 1;
   }
 
@@ -681,6 +683,7 @@ button[type="submit"] {
 
   .reconocimiento {
     font-size: 2em;
+    line-height: 22px;
   }
   .solucion_botones {
     display: flex;
@@ -708,8 +711,9 @@ button[type="submit"] {
     font-weight: bold;
   }
 
- .facil_parrafos_en_orden h3 {
+  .facil_parrafos_en_orden h3 {
     font-size: 1.8em;
+    line-height: 20px;
 }
   .tabla,
   .facil_parrafos {
@@ -759,21 +763,21 @@ button[type="submit"] {
 
   #carouselExampleCaptions.carousel {
     padding: 10px 20px 10px 20px;
-}
-.slide1{
-  height: 50vh;
-}
-.carousel-subtitulos {
-  font-size: 25px;
-  padding-bottom: 40px;
-}
-.carousel-parrafos {
-  padding-bottom: 35px;
-}
-.carousel-parrafos p {
-  font-size: 17px;
-  line-height: 0.7;
-}
+  }
+  .slide1 {
+    height: 50vh;
+  }
+  .carousel-subtitulos {
+    font-size: 25px;
+    padding-bottom: 40px;
+  }
+  .carousel-parrafos {
+    padding-bottom: 35px;
+  }
+  .carousel-parrafos p {
+    font-size: 17px;
+    line-height: 0.7;
+  }
   /* ------------------FORMULARIO DE CONTACTO------------------ */
   .contacto_titulo {
     display: flex;
@@ -797,22 +801,26 @@ button[type="submit"] {
   }
 
   .form-group2 {
-    display: flex;
-    flex-direction: column;
     padding-bottom: 50px;
     padding-top: 16px;
   }
+  .form-group,
+  .form-group2 {
+    padding-right: 0px;
+    margin-left: 0px;
+    padding-top: 8px;
+  }
   .contacto_formulario {
-    padding-left: 20px;
-    padding-top: 50px;
+    padding-left: 55px;
+    padding-top: 40px;
     border-radius: 18px;
     background-color: #0f0e0e;
     margin-top: 40px;
     color: white;
     margin-bottom: 40px;
     padding-bottom: 20px;
-    padding-right: 20px;
-    margin-right: 10px;
+    padding-right: 55px;
+    margin-right: 0px;
   }
   .contacto_formulario button {
     margin: 34px;
@@ -857,7 +865,7 @@ button[type="submit"] {
   .footer-parrafos {
     text-align: center;
   }
-  .footer-bottom{
+  .footer-bottom {
     margin-bottom: 15px;
   }
 }
