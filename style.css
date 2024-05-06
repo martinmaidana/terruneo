@@ -161,24 +161,20 @@ nav {
   padding-top: 40px;
 }
 .cards {
-  display: flex;
-  justify-content: space-between;
+
   padding: 0px 70px 0px 70px;
 }
 .card_fila1,
 .cards_fila2 {
   width: -webkit-fill-available;
+  display: flex;
+  justify-content: space-between;
 }
 .imagen_teledeteccion {
   height: 250px;
-  /* width: -webkit-fill-available ; */
   border-radius: 27px;
 }
 
-.cards-imagen1,
-.cards-imagen2 {
-  padding-right: 70px;
-}
 
 .texto_blanco_cards {
   color: white;
@@ -265,9 +261,11 @@ nav {
 .tabla {
   /* color: white;
   padding-top: 40px; */
+  padding-top: 0px;;
 }
 
 .linea_blanca2 {
+  background-color: #ffffff;
 }
 .tabla {
   position: relative;
@@ -405,37 +403,32 @@ nav {
   padding-bottom: 135px;
 }
 
-.slide1 {
-  background-image: url("./assets/carrousel/luxa.org-opacity-changed-Medio\ ambiente\ 2.jpg");
+.slider{
   background-size: cover;
   height: 80vh; /* Ajustar altura de la imagen */
-  background-color: rgba(255, 255, 255, 0.9); /* RGBA con opacidad del 50% */
+}
+.slide1 {
+  background-image: url("./assets/carrousel/luxa.org-opacity-changed-Campo-1.jpeg");
 }
 
 .slide2 {
-  background-image: url("./assets/carrousel/luxa.org-opacity-changed-Gestión\ de\ riesgo\ 6.jpg");
-
-  background-size: cover;
-  height: 80vh; /* Ajustar altura de la imagen */
+  background-image: url("./assets/carrousel/luxa.org-opacity-changed-Campo-1.jpeg");
 }
 
 .slide3 {
-  background-image: url("./assets/carrousel/luxa.org-opacity-changed-Medio\ ambiente\ 2.jpg");
-
-  background-size: cover;
-  height: 80vh; /* Ajustar altura de la imagen */
+  background-image: url("./assets/carrousel/luxa.org-opacity-changed-Medio\ ambiente\ 2.jpg"); 
 }
 
 .slide4 {
-  background-image: url("../assets/carrousel/luxa.org-opacity-changed-Cartografia\ 3.jpg");
+  background-image: url("./assets/carrousel/luxa.org-opacity-changed-Cartografia\ 3.jpg"); 
 }
 
 .slide5 {
-  background-image: url("../assets/carrousel/luxa.org-opacity-changed-Suelo\ 4.jpg");
+  background-image: url("../assets/carrousel/luxa.org-opacity-changed-Suelo\ 4.jpg"); 
 }
 
 .slide6 {
-  background-image: url("../assets/carrousel/luxa.org-opacity-changed-Atmósfera\ 5\ \(1\).jpg");
+  background-image: url("../assets/carrousel/luxa.org-opacity-changed-Atmósfera\ 5\ \(1\).jpg"); 
 }
 
 .slide7 {
