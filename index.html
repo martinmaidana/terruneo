@@ -472,7 +472,7 @@
                 <h2 class="contactanos">CONTACTANOS</h2>
             </div>
             <div class="contacto_formulario">
-                <form action="https://formsubmit.co/martinnicolasmaidana@gmail.com" method="POST">
+                <form action="https://formsubmit.co/martinnicolasmaidana@gmail.com" method="POST" onsubmit="enviarFormulario()">
                     <div class="formulario-fila1">
                         <div class="form-group inline">
                             <label for="nombre">Nombre y apellido</label>
@@ -483,9 +483,9 @@
                             <input type="text" id="organizacion" name="organizacion" required>
                         </div>
                     </div>
-
+            
                     <div class="formulario-fila2">
-
+            
                         <div class="form-group inline">
                             <label for="email">Email:</label>
                             <input type="email" id="email" name="email" required>
@@ -495,7 +495,7 @@
                             <input type="tel" id="telefono" name="telefono" required>
                         </div>
                     </div>
-
+            
                     <div class="formulario-fila3">
                         <div class="form-group2">
                             <label for="mensaje">Mensaje:</label>
@@ -503,10 +503,8 @@
                         </div>
                         <button class="formulario-boton" type="submit">Enviar mensaje</button>
                         <input type="hidden" name="_subjet" value="Novo Control">
-                        <input type="text" name="_honey" value="display:none">
+                        <input type="hidden" name="_next" value="https://martinmaidana.github.io/terruneo/">
                         <input type="hidden" name="_captcha" value="false">
-                        
-
                     </div>
                 </form>
             </div>
