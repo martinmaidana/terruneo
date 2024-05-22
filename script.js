@@ -8,3 +8,4 @@ function enviarFormulario() {
     // Redirigir a la página de origen
     window.location.href = "https://martinmaidana.github.io/terruneo/";
 }
+

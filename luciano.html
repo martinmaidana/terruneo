@@ -1,0 +1,69 @@
+<style>
+       .main_container{
+            width: 100%;
+            height: 60px;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+       }
+       .line{
+            width: 100%;
+            background-color: black;
+            height: 5px;
+       }
+       .circle{
+            width: 20px;
+            height: 20px;
+            background-color: orange;
+            border-radius: 10px;
+            position: absolute;
+            top: calc(50% - 10px);
+       }
+       .circle_1{
+            left: 0%;
+       }
+       .circle_2{
+            left: 33%;
+       }
+       .circle_3{
+            left: 66%;
+       }
+</style>
+<div class="main_container" id="contenedor_a">
+    <div class="line">  </div>
+    <div class="circle circle_1"> </div>
+    <div class="circle circle_2"> </div>
+    <div class="circle circle_3"> </div>
+</div>
+14h56
+<style>
+        .contenedor_expan{
+            background-color: rgb(167, 167, 167);
+            width: 400px;
+            margin-top:150px;
+            transition: all 0.3s;
+        }
+        .contenedor_expan:hover{
+            height: 100%;
+            margin-top: 0px;
+        }
+        .contenedor_expan:hover .text_sec{
+            opacity: 1;
+        }
+        .text_sec{
+            transition: all 0.3s;
+            opacity: 0;
+        }
+</style>
+<div class="contenedor_expan" id="contenedor_a">
+    <p class="texto_prin">
+        AUMENTO EXPONENCIAL EN EL POTENCIAL DE TUS DATOS
+    </p>
+    <p class="text_sec">
+        Con Terruneo mejorás la planificación del territorio, otimizas la politica tributaria y conocer mejor la realidad de la región. Integrá cualquier información territorial para ampliar el conocimiento.
+    </p>
+</div>

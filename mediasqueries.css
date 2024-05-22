@@ -1,0 +1,491 @@
+
+/* 
+@media screen and (max-width: 1408px) {
+  .facil_parrafos_columna {
+    padding-right: 160px;
+  }
+}
+@media screen and (max-width: 1367px) {
+  .facil_parrafos_columna {
+    padding-right: 140px;
+  }
+  .columna-3 p {
+    font-size: 1.8em;
+    line-height: 0.6;
+  }
+}
+
+@media screen and (max-width: 1296px) {
+  .facil_parrafos_columna {
+    padding-right: 116px;
+  }
+  .columna-3 p {
+    font-size: 1.6em;
+    line-height: 0.6;
+  }
+}
+@media screen and (max-width: 1288px) {
+  .facil_parrafos_columna {
+    padding-right: 117px;
+  }
+}
+/* ----------------MEDIA QUERIES  --------------*/
+/* @media screen and (max-width: 1256px) {
+  .facil_parrafos_columna {
+    padding-right: 140px;
+  }
+  .columna-3 p {
+    font-size: 1.7em;
+    line-height: 0.6;
+  }
+  .cards {
+    padding: 0px 20px 0px 20px;
+  }
+
+  .imagen_teledeteccion {
+    width: 555px;
+  }
+  .contacto_titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacto_formulario {
+    padding-left: 40px;
+    padding-top: 100px;
+
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+    margin-right: 40px;
+  }
+  .contactanos {
+    padding-left: 0px;
+  }
+}
+/* ----------------MEDIA QUERIES  --------------*/
+/* @media screen and (max-width: 1178px) {
+  .imagen_teledeteccion {
+    width: 537px;
+  }
+}
+
+/* ----------------MEDIA QUERIES TABLET --------------*/
+@media screen and (max-width: 1000px) {
+    .imagen_teledeteccion {
+      height: 317px;
+      width: -webkit-fill-available;
+    }
+    .cards {
+      display: flex;
+      padding: 0px 10px 0px 10px;
+      flex-direction: column;
+      /* align-items: stretch; */
+    }
+  
+    .card_fila1,
+    .cards_fila2 {
+      /* width: -webkit-fill-available; */
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cards-imagen1,
+    .cards-imagen2 {
+      padding-right: 0px;
+    }
+  
+    .contacto_titulo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  @media screen and (max-width: 871px) {
+    .carousel-parrafos p {
+      font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 749px) {
+    .carousel-parrafos p {
+      font-size: 17px;
+    }
+    .columna-3 {
+      padding-top: 20px;
+      flex: 3;
+    }
+    .columna-3 p {
+      font-size: 1.1em;
+      line-height: 0.6;
+    }
+  
+    .tabla1 {
+      padding: 0px 20px;
+      color: white;
+      padding-top: 40px;
+    }
+    .facil_parrafos_en_orden {
+      display: flex;
+      /* justify-content: center; */
+      padding: 20px 0px 20px 0px;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+  /*--------------- MEDIA QUERIES PHONE------------- */
+  
+  @media screen and (max-width: 576px) {
+    .nav_terruneo {
+      padding-top: 20px;
+      padding-left: 20px;
+    }
+  
+    .blanco {
+      font-size: 3em;
+    }
+    .naranja {
+      font-size: 3em;
+    }
+  
+    .titulo_principal {
+      padding-top: 12px;
+      padding-left: 2px;
+    }
+    .titulo_blanco {
+      color: white;
+      font-weight: 800;
+      font-size: 2.5em;
+      text-align: center;
+    }
+  
+    .button_conocenos {
+      border-radius: 21px;
+      margin: 30px auto 25px auto;
+      width: 130px;
+      height: 44px;
+      font-size: 17px;
+      color: rgb(44, 44, 44);
+      background-color: rgb(204, 204, 204);
+      display: block;
+    }
+    .imagen-header {
+      height: 230px;
+      width: -webkit-fill-available;
+    }
+    .h6_naranja {
+      font-size: 22px;
+    }
+    .teledeteccion_titulo {
+      margin-bottom: 2.5em;
+      line-height: 0.9px;
+    }
+    .teledeteccion_titulo_blanco {
+      font-size: 2em;
+    }
+  
+    .teledeteccion_titulo_naranja {
+      font-size: 2em;
+    }
+  
+    .teledeteccion_parrafo {
+      line-height: 5px;
+      font-size: 1.2em;
+    }
+    .teledeteccion {
+      display: grid;
+      justify-content: space-around;
+      /* margin-top: 45px; */
+      margin-right: 0px;
+      margin-bottom: 25px;
+      justify-items: center;
+    }
+  
+    .cards {
+      display: flex;
+      justify-content: space-between;
+      padding: 2px;
+      flex-direction: column;
+    }
+    .cards_fila1,
+    .cards_fila2 {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+  
+    .cards-imagenes {
+      padding: 15px 30px 15px 30px;
+    }
+    .imagen_teledeteccion {
+      height: 250px;
+      width: 466px;
+      border-radius: 13px;
+    }
+  
+    .texto_blanco_cards {
+      line-height: 1;
+    }
+  
+    /* --------------SOLUCION MAS COMPLETA ------------------------*/
+    .solucion_completa {
+      text-align: center;
+  
+      padding-top: 20px;
+      padding-left: 0px;
+    }
+  
+    .solucion_h6_naranja {
+      line-height: 7.5px;
+      color: rgb(243, 146, 75);
+      font-weight: 900;
+      margin-top: 0px;
+      padding-top: 35px;
+      font-size: 26px;
+      margin-right: 0px;
+      text-align: center;
+    }
+  
+    .reconocimiento {
+      font-size: 2em;
+      line-height: 22px;
+    }
+    .solucion_botones {
+      display: flex;
+      padding-bottom: 39px;
+      flex-direction: column;
+      align-content: center;
+      flex-wrap: wrap;
+    }
+    /* ------------------SECCION FACIL-------------------------- */
+    .facil-titulos {
+      text-align: center;
+    }
+    .facil-de-usar-titulo1 {
+      padding-left: 0px;
+      font-size: 2em;
+      color: #ffffff;
+      font-weight: bold;
+      padding-top: 60px;
+      line-height: 0.6;
+    }
+    .facil-de-usar-titulo2 {
+      padding-left: 0px;
+      font-size: 2em;
+      color: #f3924b;
+      font-weight: bold;
+    }
+  
+    .facil_parrafos_en_orden h3 {
+      font-size: 1.8em;
+      line-height: 20px;
+    }
+    .tabla,
+    .facil_parrafos {
+      display: none;
+    }
+    .video-container {
+      display: flex;
+      justify-content: center;
+      padding: 0px 20px;
+      margin-top: 45px;
+    }
+  
+    .tabla1 {
+      padding: 0 20px;
+      color: white;
+      padding-top: 20px;
+    }
+    .facil_parrafos_en_orden {
+      display: flex;
+      /* justify-content: center; */
+      padding: 0px 0px 40px 0px;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    .columna-1 {
+      display: none;
+    }
+    .columna-2 {
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    .columna-3 p {
+      margin-top: 10px;
+      /* padding-top: 6px; */
+      font-size: 1.5em;
+      line-height: 0.6;
+    }
+  
+    /* .------------EXPLORA NUESTROS CAMPOS DE ACCION -------------*/
+    .explora-nuestros,
+    .camposAccion {
+      text-align: center;
+      padding-left: 0px;
+      font-size: 2em;
+    }
+  
+    #carouselExampleCaptions.carousel {
+      padding: 10px 20px 10px 20px;
+    }
+    .slider {
+      height: 40vh;
+    }
+    .carousel-subtitulos {
+      font-size: 25px;
+      padding-bottom: 40px;
+    }
+    .carousel-parrafos {
+      padding-bottom: 0px;
+    }
+    .carousel-parrafos p {
+      font-size: 17px;
+      line-height: 0.7;
+    }
+    /* ------------------FORMULARIO DE CONTACTO------------------ */
+    .contacto_titulo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contactanos {
+      padding-left: 10px;
+      font-size: 2em;
+      color: #f3924b;
+      font-weight: bold;
+      padding-top: 15px;
+    }
+  
+    .formulario-fila1,
+    .formulario-fila2 {
+      display: flex;
+      padding-top: 0px;
+      flex-direction: column;
+    }
+  
+    .form-group2 {
+      padding-bottom: 50px;
+      padding-top: 16px;
+    }
+    .form-group,
+    .form-group2 {
+      padding-right: 0px;
+      margin-left: 0px;
+      padding-top: 8px;
+    }
+    .contacto_formulario {
+      padding-left: 55px;
+      padding-top: 40px;
+      border-radius: 18px;
+      background-color: #0f0e0e;
+      margin-top: 40px;
+      color: white;
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      padding-right: 55px;
+      margin-right: 0px;
+    }
+    .contacto_formulario button {
+      margin: 34px;
+      background-color: white;
+      color: black;
+      border: none;
+      padding: 14px 45px;
+      cursor: pointer;
+    }
+    .formulario-boton {
+      float: none;
+    }
+    /* ------------FOOTER----------------- */
+    .footer {
+      background-color: #1c1c1c;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      padding-left: 20px;
+      padding-top: 20px;
+      padding-bottom: 10px;
+    }
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 30px;
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo-terruneo-footer {
+      width: 48px;
+      padding-bottom: 19px;
+    }
+    .logo_atic {
+      width: 149px;
+      padding-bottom: 23px;
+      padding-top: 6px;
+    }
+    .footer-right {
+      padding-right: 0px;
+    }
+    .footer-parrafos {
+      text-align: center;
+    }
+    .footer-bottom {
+      margin-bottom: 15px;
+    }
+  } */
+  
+  /* @media screen and (max-width: 509px) {
+    .teledeteccion_titulo_blanco {
+      font-size: 1.45em;
+    }
+    .teledeteccion_titulo_naranja {
+      font-size: 1.45em;
+    }
+    .teledeteccion_parrafo {
+      line-height: 2px;
+      font-size: 0.8em;
+    }
+    .imagen_teledeteccion {
+      height: auto;
+      width: 363px;
+      border-radius: 13px;
+    }
+    .teledeteccion {
+      margin-bottom: 10px;
+      margin-top: 30px;
+    }
+  
+    .reconocimiento {
+      line-height: 27px;
+    }
+    .facil_parrafos_en_orden {
+      padding: 7px 0px 40px 0px;
+    }
+    .columna-3 p {
+      text-align: center;
+      font-size: 1.2em;
+      line-height: 0.8em;
+    }
+    .carousel-subtitulos {
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
+    .carousel-parrafos p {
+      font-size: 14px;
+      line-height: 0.9em;
+    }
+    .contacto_formulario button {
+      margin: 0px;
+    }
+  
+    .carousel-parrafos {
+      padding-bottom: 0px;
+    }
+  
+    .footer-bottom {
+      text-align: center;
+    }
+  }  */
+  

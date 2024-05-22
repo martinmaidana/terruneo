@@ -3,11 +3,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Oculta el desbordamiento horizontal */
 }
 
 /* -----------------NAVBAR---------------- */
@@ -15,7 +19,7 @@
 nav {
   display: flex;
   align-items: center;
-  background-color: black;
+  /* background-color: black; */
 }
 .logo-terruneo {
   width: 50px;
@@ -38,30 +42,33 @@ nav {
 }
 
 .button_conocenos {
- color:black;
+  color: black;
   border-radius: 21px;
   margin-top: 22px;
   margin-left: 40px;
   margin-bottom: 110px;
   width: 230px;
   height: 50px;
-  font-size: 22px; /* Tamaño de la fuente */
-  color: rgb(44, 44, 44);
+  font-size: 18px; /* Tamaño de la fuente */
+  color: black;
   background-color: rgb(204, 204, 204);
 }
 
 .button_conocenos a {
   text-decoration: none; /* Quita la subrayado del enlace */
+  color: black;
 }
 
 .button_conocenos:hover {
   text-decoration: none; /* Quita la subrayado del enlace al pasar el mouse */
+  color: #ffffff;
 }
 
 .titulo_blanco {
   color: white;
   font-weight: 800; /* O también puedes usar 'bold' */
   font-size: 4em;
+  line-height: 54px;
 }
 
 .titulo_principal {
@@ -101,7 +108,7 @@ nav {
   font-size: 3em;
   color: #f3924b;
   font-weight: bold;
-  line-height: 0.8;
+  line-height: 0.6;
 }
 
 .parrafos-container {
@@ -114,18 +121,28 @@ nav {
   display: flex;
 }
 
-/* -----------------MAIN-------------- */
-
-.gestionaElTerritorio {
-  background-image: url("./assets/Elemento\ grafico\ camino\ -\ terruneo-02\ 1.png");
+/* Estilos iniciales para el main */
+.gestionadElTerritorio {
+  background-image: url("./assets/header-web-opacity.jpg");
   background-color: black;
   background-size: cover;
+  animation: desplazamiento 10s linear infinite;
+  -webkit-animation: desplazamiento 10s linear infinite; /* Para compatibilidad con navegadores webkit */
 }
 
+@keyframes desplazamiento {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
 .reconocimiento {
   font-size: 3em;
   color: #ffffff;
   font-weight: bold;
+  line-height: 0.6;
 }
 
 .subtitulo_naranja {
@@ -161,7 +178,6 @@ nav {
   padding-top: 40px;
 }
 .cards {
-
   padding: 0px 70px 0px 70px;
 }
 .card_fila1,
@@ -174,7 +190,6 @@ nav {
   height: 250px;
   border-radius: 27px;
 }
-
 
 .texto_blanco_cards {
   color: white;
@@ -210,7 +225,7 @@ nav {
   font-size: 33px;
   line-height: 0.9;
 }
-.soluciones-desplegables{
+.soluciones-desplegables {
   display: flex;
 }
 
@@ -249,30 +264,29 @@ nav {
   color: #ffffff;
   font-weight: bold;
   padding-top: 60px;
-  line-height: 0.6;
+  line-height: 0.2;
 }
 
 .facil-de-usar-titulo2 {
   padding-left: 70px;
+  padding-bottom: 20px;
   font-size: 3em;
   color: #f3924b;
   font-weight: bold;
 }
 .tabla {
-  /* color: white;
-  padding-top: 40px; */
-  padding-top: 0px;;
-}
-
-.linea_blanca2 {
-  background-color: #ffffff;
-}
-.tabla {
+ 
+  padding-top: 0px;
   position: relative;
   width: 100%;
 
   padding: 0 70px;
 }
+
+.linea_blanca2 {
+  background-color: #ffffff;
+}
+
 
 .facil_parrafos_en_orden {
   display: flex;
@@ -310,7 +324,7 @@ nav {
 
 .primero {
   top: -4px; /* Ajusta la posición verticalmente */
-  left: 4.5%; /* Alinea el primer punto al principio de la línea */
+  left: 4.6%; /* Alinea el primer punto al principio de la línea */
 }
 
 .segundo {
@@ -331,7 +345,9 @@ nav {
 }
 
 .video-terruneo {
-  border: 1px solid #ccc;
+  margin: 0px 50px 0px;
+    border-radius: 25px;
+  
   border-radius: 13px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   width: -webkit-fill-available;
@@ -377,7 +393,7 @@ nav {
   color: #ffffff;
   font-weight: bold;
   padding-top: 60px;
-  line-height: 0.6;
+  line-height: 0.2;
 }
 
 .camposAccion {
@@ -403,9 +419,15 @@ nav {
   padding-bottom: 135px;
 }
 
-.slider{
+ .carousel .carousel-inner{
+  max-height: 80vh;
+  border-radius: 30px;
+} 
+
+
+/* .slider {
   background-size: cover;
-  height: 80vh; /* Ajustar altura de la imagen */
+  height: 80vh; /* Ajustar altura de la imagen 
 }
 .slide1 {
   background-image: url("./assets/carrousel/luxa.org-opacity-changed-Campo-1.jpeg");
@@ -416,24 +438,30 @@ nav {
 }
 
 .slide3 {
-  background-image: url("./assets/carrousel/luxa.org-opacity-changed-Medio\ ambiente\ 2.jpg"); 
+  background-image: url("./assets/carrousel/luxa.org-opacity-changed-Medio\ ambiente\ 2.jpg");
 }
 
 .slide4 {
-  background-image: url("./assets/carrousel/luxa.org-opacity-changed-Cartografia\ 3.jpg"); 
+  background-image: url("./assets/carrousel/luxa.org-opacity-changed-Cartografia\ 3.jpg");
 }
 
 .slide5 {
-  background-image: url("../assets/carrousel/luxa.org-opacity-changed-Suelo\ 4.jpg"); 
+  background-image: url("../assets/carrousel/luxa.org-opacity-changed-Suelo\ 4.jpg");
 }
 
 .slide6 {
-  background-image: url("../assets/carrousel/luxa.org-opacity-changed-Atmósfera\ 5\ \(1\).jpg"); 
+  background-image: url("../assets/carrousel/luxa.org-opacity-changed-Atmósfera\ 5\ \(1\).jpg");
 }
 
 .slide7 {
   background-image: url("../assets/carrousel/luxa.org-opacity-changed-Gestión\ de\ riesgo\ 6.jpg");
 }
+
+.thumbnail {
+  width: 80px; /* Ancho de las miniaturas 
+  height: auto; /* Altura ajustada automáticamente 
+  cursor: pointer;  Cambia el cursor al pasar por encima } */
+
 
 /* --------------FORMULARIO DE CONTACTO-------------- */
 .contacto {
@@ -486,7 +514,7 @@ nav {
 .form-group2 {
   display: flex;
   flex-direction: column;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   padding-top: 30px;
 }
 
@@ -525,8 +553,11 @@ button[type="submit"] {
   border-radius: 22px; /* Ajusta el valor según sea necesario */
   /* Otros estilos del botón */
 }
-.formulario-boton {
-  float: right;
+
+formulario-boton-enviar{
+  padding-right: 35px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* --------------FOOTER-------------- */
@@ -555,6 +586,12 @@ button[type="submit"] {
 
 .footer-parrafos a {
   text-decoration: none;
+  text-align: center;
+
+  background-color: transparent;
+  color: white;
+}
+.footer-parrafos {
   color: white;
 }
 
@@ -575,14 +612,97 @@ button[type="submit"] {
 .footer-terruneo {
   display: flex;
 }
-/* ----------------MEDIA QUERIES TABLET --------------*/
-@media screen and (max-width: 768px) {
-  cards {
+/* 
+@media screen and (max-width: 1408px) {
+  .facil_parrafos_columna {
+    padding-right: 160px;
+  }
+}
+@media screen and (max-width: 1367px) {
+  .facil_parrafos_columna {
+    padding-right: 140px;
+  }
+  .columna-3 p {
+    font-size: 1.8em;
+    line-height: 0.6;
+  }
+}
+
+@media screen and (max-width: 1296px) {
+  .facil_parrafos_columna {
+    padding-right: 116px;
+  }
+  .columna-3 p {
+    font-size: 1.6em;
+    line-height: 0.6;
+  }
+}
+@media screen and (max-width: 1288px) {
+  .facil_parrafos_columna {
+    padding-right: 117px;
+  }
+}
+/* ----------------MEDIA QUERIES  --------------*/
+/* @media screen and (max-width: 1256px) {
+  .facil_parrafos_columna {
+    padding-right: 140px;
+  }
+  .columna-3 p {
+    font-size: 1.7em;
+    line-height: 0.6;
+  }
+  .cards {
+    padding: 0px 20px 0px 20px;
+  }
+
+  .imagen_teledeteccion {
+    width: 555px;
+  }
+  .contacto_titulo {
     display: flex;
-    /* justify-content: space-between; */
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacto_formulario {
+    padding-left: 40px;
+    padding-top: 100px;
+
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+    margin-right: 40px;
+  }
+  .contactanos {
+    padding-left: 0px;
+  }
+}
+/* ----------------MEDIA QUERIES  --------------*/
+/* @media screen and (max-width: 1178px) {
+  .imagen_teledeteccion {
+    width: 537px;
+  }
+}
+
+/* ----------------MEDIA QUERIES TABLET --------------*/
+@media screen and (max-width: 1000px) {
+  .imagen_teledeteccion {
+    height: 317px;
+    width: -webkit-fill-available;
+  }
+  .cards {
+    display: flex;
     padding: 0px 10px 0px 10px;
-    /* flex-direction: column; */
-    align-items: stretch;
+    flex-direction: column;
+    /* align-items: stretch; */
+  }
+
+  .card_fila1,
+  .cards_fila2 {
+    /* width: -webkit-fill-available; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
   }
 
   .cards-imagen1,
@@ -594,6 +714,37 @@ button[type="submit"] {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+@media screen and (max-width: 871px) {
+  .carousel-parrafos p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 749px) {
+  .carousel-parrafos p {
+    font-size: 17px;
+  }
+  .columna-3 {
+    padding-top: 20px;
+    flex: 3;
+  }
+  .columna-3 p {
+    font-size: 1.1em;
+    line-height: 0.6;
+  }
+
+  .tabla1 {
+    padding: 0px 20px;
+    color: white;
+    padding-top: 40px;
+  }
+  .facil_parrafos_en_orden {
+    display: flex;
+    /* justify-content: center; */
+    padding: 20px 0px 20px 0px;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 /*--------------- MEDIA QUERIES PHONE------------- */
@@ -634,6 +785,7 @@ button[type="submit"] {
   }
   .imagen-header {
     height: 230px;
+    width: -webkit-fill-available;
   }
   .h6_naranja {
     font-size: 22px;
@@ -669,13 +821,19 @@ button[type="submit"] {
     padding: 2px;
     flex-direction: column;
   }
+  .cards_fila1,
+  .cards_fila2 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
 
   .cards-imagenes {
     padding: 15px 30px 15px 30px;
   }
   .imagen_teledeteccion {
     height: 250px;
-    width: -webkit-fill-available;
+    width: 466px;
     border-radius: 13px;
   }
 
@@ -785,7 +943,7 @@ button[type="submit"] {
   #carouselExampleCaptions.carousel {
     padding: 10px 20px 10px 20px;
   }
-  .slide1 {
+  .slider {
     height: 40vh;
   }
   .carousel-subtitulos {
@@ -793,7 +951,7 @@ button[type="submit"] {
     padding-bottom: 40px;
   }
   .carousel-parrafos {
-    padding-bottom: 35px;
+    padding-bottom: 0px;
   }
   .carousel-parrafos p {
     font-size: 17px;
@@ -889,9 +1047,9 @@ button[type="submit"] {
   .footer-bottom {
     margin-bottom: 15px;
   }
-}
+} */
 
-@media screen and (max-width: 509px) {
+/* @media screen and (max-width: 509px) {
   .teledeteccion_titulo_blanco {
     font-size: 1.45em;
   }
@@ -904,11 +1062,14 @@ button[type="submit"] {
   }
   .imagen_teledeteccion {
     height: auto;
+    width: 363px;
+    border-radius: 13px;
   }
   .teledeteccion {
     margin-bottom: 10px;
     margin-top: 30px;
   }
+
   .reconocimiento {
     line-height: 27px;
   }
@@ -916,7 +1077,8 @@ button[type="submit"] {
     padding: 7px 0px 40px 0px;
   }
   .columna-3 p {
-    font-size: 1em;
+    text-align: center;
+    font-size: 1.2em;
     line-height: 0.8em;
   }
   .carousel-subtitulos {
@@ -938,4 +1100,88 @@ button[type="submit"] {
   .footer-bottom {
     text-align: center;
   }
+}  */
+.contenedor_expan{
+  background-color: rgb(167, 167, 167);
+  width: 400px;
+  margin-top:150px;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
 }
+.contenedor_expan:hover{
+  height: 100%;
+
+  background-color: black;
+  transition: all 0.3s;
+  padding-bottom: 100px;
+  padding-top: 65px;
+  margin-top: -120px;
+
+}
+.contenedor_expan:hover .texto_sec{
+  opacity: 1;
+  color:white; 
+ line-height: 0.5;  
+
+}
+
+.texto_sec{ 
+  opacity: 0;
+
+  line-height: 0.8; /* Ajusta este valor según tu preferencia para disminuir el interlineado */
+  transition: all 0.3s;
+ 
+}
+.texto_prin, .texto_punteado {
+  color: orange;
+  font-size: 2rem;
+  font-weight:800;
+  line-height: 0.6;
+  transition: all 0.3s;
+}
+
+.contenedor_expan:hover .texto_punteado {
+ color:black;
+ transition: all 0.3s;
+}
+.contenedores{
+  display: flex;
+  padding-top: 130px;
+  justify-content: space-between;
+  padding-right: 12px;
+}
+
+/* --------------CAROUSEL----------- */
+
+
+
+
+.carousel-indicators button img {
+  height: 80px; /* Establece la altura deseada para todas las imágenes */
+
+  
+}
+
+.carousel-indicators button[data-bs-target]{
+  width: 200px;
+}
+.carousel-indicators button[data-bs-target]:not(.active){
+  opacity: 0.8;
+}
+
+.carousel-indicators {
+  position: absolute;
+  padding-bottom: 92px;
+}
+
+
+
+
+
+
+
+
+
+
+
