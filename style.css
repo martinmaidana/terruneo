@@ -555,9 +555,9 @@ button[type="submit"] {
 }
 
 formulario-boton-enviar{
-  padding-right: 35px;
-  display: flex;
-  justify-content: flex-end;
+  padding-right: 30px !important;
+  display: flex !important;
+  justify-content: flex-end !important;
 }
 
 /* --------------FOOTER-------------- */
@@ -1009,9 +1009,9 @@ formulario-boton-enviar{
     padding: 14px 45px;
     cursor: pointer;
   }
-  .formulario-boton {
+  /* .formulario-boton {
     float: none;
-  }
+  } */
   /* ------------FOOTER----------------- */
   .footer {
     background-color: #1c1c1c;
