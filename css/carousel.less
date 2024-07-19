@@ -1,0 +1,363 @@
+@transition: all 0.3s;
+
+//#### Desktop 
+
+.section_carousel{
+    width: 100%;
+    padding: 70px;
+    background-color: var(--background-color);
+}
+
+.title_container{
+    h2{
+        color: var(--text-main-color);
+        font-weight: 400;
+        font-size: 50px;
+    }
+    span{
+        color: var(--main-color);
+        font-weight: 800;
+        font-size: 50px;
+    }
+}
+
+
+
+
+// Carousel general
+.carousel_main_container{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    //max-width: 1250px;
+    height: 610px;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 50px;
+    box-shadow: inset 0px 27px 100px 0px #2F2F2F;
+
+    // Pantalla > a 1550px
+    @media screen and (min-width:1550px) {        
+        height: 700px;
+    }
+}
+
+// Mineaturas
+.mineatures_container_main{
+    width: 800px;   
+    position: absolute;
+    bottom: 50px;
+    left: calc(50% - 400px);
+    .displace_mineaturas{
+        @height: 25px;
+        position: absolute;
+        top: -@height;
+        right: 0px;
+        height: @height;
+        width: 60px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(-45deg, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%);
+        backdrop-filter: blur(40px);
+        button{
+            width: 25px;
+            height: @height;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            svg{
+                width: 60%;
+                max-height: 60%;
+                fill: white;
+                transition: @transition;
+            }
+            &:hover{
+                svg{
+                    fill: var(--main-color);
+                }
+            }
+        }
+    }
+    .mineatures_container{
+        scroll-behavior: smooth;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        //padding: 30px 60px;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(-45deg, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%);
+        backdrop-filter: blur(40px);
+        gap: 15px;
+        .mineature{
+            @width: 230px;
+            @height: 120px;
+            z-index: 10;
+            border: 1px solid transparent;
+            min-width:  @width;
+            max-width:  @width;
+            min-height:  @height;
+            max-height:  @height;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: @transition;
+            img{
+                width: 110%;
+                height: 110%;
+                object-fit: cover;
+                object-position: center center;
+                z-index: 5px;
+            }
+            button{
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                border-radius: 20px;
+                padding: 4px 15px;
+                background-color: #D9D9D9D9;
+                border: none;
+                outline: none;
+                z-index: 10px;
+                color: white;
+                font-size: 13px;
+                font-weight: bold;
+                transition: @transition;
+            }
+            &[data-active="false"]:hover{                
+                border: 1px solid black;
+            }
+            &[data-active="true"]{                
+                border: 1px solid var(--main-color);
+                button{
+                    background-color: var(--main-color);
+                }
+            }
+        } 
+    }  
+}
+
+// Banner
+.banners_container{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    .container_img_banner{
+        height: 100%;
+        overflow: hidden;
+        transition: all 0.65s;
+        transition-timing-function: ease-in-out;
+        image-rendering: optimizeQuality;
+        background-size: cover;
+        img{
+            width: 100%;
+            height: 120%;
+            object-fit: cover;
+            object-position: center center;
+            transition: @transition;
+        }
+        .text_container{
+            position: absolute;
+            top: 185px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 20px;
+            width: auto;
+            text-align: center;
+            text-shadow: #000000 1px 1px 8px;
+            h2{
+                font-size: 50px;
+                font-weight: 800;
+                line-height: 114%;
+                text-transform: uppercase;
+                transform: translateY(100px);   
+                opacity: 0;
+                transition: all 0s 0.3s;
+                width: auto;
+                z-index: 10;
+                color: white;
+            }
+            p{
+                font-size: 25px;
+                font-weight: 300;
+                line-height: 123%;
+                margin-top: 29px;
+                margin-bottom: 0px;                
+                transform: translateY(100px);   
+                opacity: 0;
+                transition: all 0s 0.3s;
+                color: white;
+            }
+        }
+    }
+    .container_img_banner[data-active="true"]{
+        width: 100%;
+        .text_container{
+            opacity: 1;
+            h2{
+                transform: translateY(0px);   
+                opacity: 1;
+                transition: all 0.6s 0.4s;
+            }
+            p{
+                transform: translateY(0px);   
+                opacity: 1;
+                transition: all 0.7s 0.4s;
+            }
+        }
+    }
+    .container_img_banner[data-active="false"]{
+        width: 0%;
+    }
+
+    &::before{
+        backdrop-filter: blur(5px) !important;
+    }
+}
+
+
+
+// Displace buttons
+.displace_btn{
+    position: absolute;
+    top: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    z-index: 30;
+    background: linear-gradient(0deg, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%);
+    backdrop-filter: blur(40px);
+    outline: none;
+    border: none;
+    svg{
+        width: 60%;
+        height: 60%;
+        z-index: 10;
+        fill: white;
+        transition: @transition;
+    }
+    &.displace_left{
+        left: 20px;
+    }
+    &.displace_right{
+        right: 20px;
+    }
+    &:hover{
+        svg{
+            fill: var(--main-color);
+        }
+    }
+}
+
+
+
+//################
+//####      Mobile
+//################
+
+@media screen and (max-width:750px) {  
+    .section_carousel{
+        padding: 70px 15px;
+        padding-bottom: 150px;
+    }
+
+    .title_container{
+        h2{
+            font-size: 25px;
+            text-align: center;
+        }
+        span{
+            font-size: 25px;
+            text-align: center;
+        }
+    }  
+
+    .carousel_main_container{
+        margin-top: 25px;     
+        height: 200px;   
+        overflow: visible;
+    }
+
+    .mineatures_container_main{
+        bottom: unset;
+        top: calc(100% + 20px);
+        left: 0px;
+        width: 100%;
+        .displace_mineaturas{
+            display: none;
+        }
+        .mineatures_container{
+            justify-content: center;
+            gap: 5px;
+            width: 100%;
+            background: transparent;
+            backdrop-filter: unset;
+            .mineature{
+                min-width: unset;
+                min-height: unset;
+                width: 20px;
+                height: 8px;
+                border-radius: 10px;
+                background-color: white;
+                img{
+                    display: none;
+                }
+                button{
+                    display: none;
+                }
+                &[data-active="true"]{                
+                    border: 1px solid var(--main-color);
+                    background-color: var(--main-color);
+                }
+            }
+        }
+    }
+
+    .banners_container{
+        .container_img_banner{
+            .text_container{
+                transform: translateX(0px);
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                h2{
+                    margin-top: 20px;
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 15px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    .displace_btn{
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg{
+            max-height: 55%;
+        }
+        &.displace_left{
+            left: 5px;
+        }
+        &.displace_right{
+            right: 5px;
+        }
+        &:hover{
+            svg{
+                fill: white;
+            }
+        }
+    }
+
+}  

@@ -52,6 +52,7 @@ nav {
   font-size: 18px; /* Tamaño de la fuente */
   color: black;
   background-color: rgb(204, 204, 204);
+  flex-wrap: nowrap;
 }
 
 .button_conocenos a {
