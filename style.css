@@ -115,6 +115,19 @@ nav {
   line-height: 110%; /* Line height of 110% */
 }
 
+.container-img{
+  width: 100%;
+  height: 440px;
+  overflow: hidden;
+}
+
+.container-img .imagen-header {
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+  object-position: -5px 60%;
+}
+
 .descubri{
   width: 745px;
 }
@@ -132,9 +145,12 @@ nav {
 /* Estilos iniciales para el main */
 .gestionadElTerritorio {
   background-image: url("./assets/Elemento-grafico-camino-terruneo-02-1.webp");
-  background-color: black;
-  background-size: cover;
-
+  background-repeat: no-repeat;
+  background-size: 100% 100% ;
+  background-position: 0% 250px;
+  background-color: #202020;
+  border-bottom: 1px solid white;
+  padding-bottom: 85px;
 }
 
 @keyframes desplazamiento {
@@ -215,9 +231,10 @@ nav {
 .solucion_completa {
   background-image: url("./assets/Group-1000001931_1.webp");
   background-size: cover;
-  background-color: black;
-  padding-top: 60px;
+  background-color: #202020;
+  padding-top: 85px;
   padding-left: 70px;
+  border-bottom: 1px solid white;
 }
 .solucion_h6_naranja {
   line-height: 0.5px;
@@ -265,7 +282,7 @@ nav {
 
 /* ------------------SECCION FACIL DE USAR-------------- */
 .facil_de_usar {
-  background-color: rgb(35, 35, 35);
+  background-color: #202020;
 }
 .facil_ancho{
   width:769px;
@@ -796,10 +813,6 @@ formulario-boton-enviar{
     color: rgb(44, 44, 44);
     background-color: rgb(204, 204, 204);
     display: block;
-  }
-  .imagen-header {
-    height: 230px;
-    width: -webkit-fill-available;
   }
   .h6_naranja {
     font-size: 22px;
