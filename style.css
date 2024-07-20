@@ -68,8 +68,11 @@ nav {
 .titulo_blanco {
   color: white;
   font-weight: 800; /* O también puedes usar 'bold' */
-  font-size: 4em;
+  font-size: 60px;
   line-height: 54px;
+}
+.gestiona{
+  width: 912px;
 }
 
 .titulo_principal {
@@ -99,17 +102,21 @@ nav {
 }
 
 .teledeteccion_titulo_blanco {
-  font-size: 3em;
+  font-size: 50px;
   color: #ffffff;
-  font-weight: bold;
-  line-height: 0.6;
+   font-weight: 800; /* Extrabold */
+  line-height: 110%; /* Line height of 110% */
 }
 
 .teledeteccion_titulo_naranja {
-  font-size: 3em;
+  font-size: 50px;
   color: #f3924b;
-  font-weight: bold;
-  line-height: 0.6;
+  font-weight: 800; /* Extrabold */
+  line-height: 110%; /* Line height of 110% */
+}
+
+.descubri{
+  width: 745px;
 }
 
 .parrafos-container {
@@ -124,11 +131,10 @@ nav {
 
 /* Estilos iniciales para el main */
 .gestionadElTerritorio {
-  background-image: url("./assets/header-web-opacity.jpg");
+  background-image: url("./assets/Elemento-grafico-camino-terruneo-02-1.webp");
   background-color: black;
   background-size: cover;
-  animation: desplazamiento 10s linear infinite;
-  -webkit-animation: desplazamiento 10s linear infinite; /* Para compatibilidad con navegadores webkit */
+
 }
 
 @keyframes desplazamiento {
@@ -140,11 +146,14 @@ nav {
   }
 }
 .reconocimiento {
-  font-size: 3em;
+  font-size: 54px;
   color: #ffffff;
   font-weight: bold;
-  line-height: 0.6;
+  line-height: 115%;
+  width: 815px;
+
 }
+
 
 .subtitulo_naranja {
   padding-left: 100px;
@@ -204,7 +213,7 @@ nav {
 /* -----------------HEADER--------------- */
 
 .solucion_completa {
-  background-image: url("./assets/Group\ 1000001931.png");
+  background-image: url("./assets/Group-1000001931_1.webp");
   background-size: cover;
   background-color: black;
   padding-top: 60px;
@@ -258,20 +267,22 @@ nav {
 .facil_de_usar {
   background-color: rgb(35, 35, 35);
 }
-
+.facil_ancho{
+  width:769px;
+}
 .facil-de-usar-titulo1 {
   padding-left: 70px;
-  font-size: 3em;
+  font-size: 50px;
   color: #ffffff;
   font-weight: bold;
   padding-top: 60px;
-  line-height: 0.2;
+  line-height: 110%;
 }
 
 .facil-de-usar-titulo2 {
-  padding-left: 70px;
+  
   padding-bottom: 20px;
-  font-size: 3em;
+  font-size: 50px;
   color: #f3924b;
   font-weight: bold;
 }
@@ -390,18 +401,20 @@ nav {
 
 .explora-nuestros {
   padding-left: 70px;
-  font-size: 3em;
+  font-size: 50px;
   color: #ffffff;
   font-weight: bold;
   padding-top: 60px;
-  line-height: 0.2;
+  line-height: 110%;
 }
 
 .camposAccion {
-  padding-left: 70px;
-  font-size: 3em;
+  font-size: 50px;
   color: #f3924b;
   font-weight: bold;
+}
+.explora_ancho{
+  width: 600px;
 }
 
 #carouselExampleCaptions.carousel {
@@ -466,14 +479,14 @@ nav {
 
 /* --------------FORMULARIO DE CONTACTO-------------- */
 .contacto {
-  background-image: url("./assets/Group\ 1000001931.png");
+  background-image: url("./assets/Group-1000001931_1.webp");
   background-size: cover;
   background-color: black;
 }
 
 .contactanos {
   padding-left: 70px;
-  font-size: 3em;
+  font-size: 54px;
   color: #f3924b;
   font-weight: bold;
   padding-top: 60px;
@@ -861,10 +874,7 @@ formulario-boton-enviar{
     text-align: center;
   }
 
-  .reconocimiento {
-    font-size: 2em;
-    line-height: 22px;
-  }
+
   .solucion_botones {
     display: flex;
     padding-bottom: 39px;
@@ -873,20 +883,20 @@ formulario-boton-enviar{
     flex-wrap: wrap;
   }
   /* ------------------SECCION FACIL-------------------------- */
-  .facil-titulos {
-    text-align: center;
+  .facil_ancho {
+    width: 769px;
   }
   .facil-de-usar-titulo1 {
-    padding-left: 0px;
-    font-size: 2em;
+    
+    font-size: 50px;
     color: #ffffff;
     font-weight: bold;
     padding-top: 60px;
-    line-height: 0.6;
+  
   }
   .facil-de-usar-titulo2 {
-    padding-left: 0px;
-    font-size: 2em;
+    
+    font-size: 50px;
     color: #f3924b;
     font-weight: bold;
   }
