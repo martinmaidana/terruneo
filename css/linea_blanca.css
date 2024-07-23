@@ -1,0 +1,36 @@
+
+.container_linea_blanca {
+    display: flex;
+    justify-content: center;
+  
+    width: 100%;
+    flex-wrap: nowrap;
+    padding: 70px;
+    position: relative;
+  }
+  
+  .child_linea_blanca {
+   
+    width: 33%;
+    margin: 0 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;  
+    border-top: 2px solid white;
+    position: relative;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    border-radius: 50%;
+    top: -5px;
+    left: 0px;
+    position: absolute;
+  }
+  
+  .texto_linea_blanca {
+    color: white;
+    margin: 0;
+    width: 206px;
+  }
