@@ -345,10 +345,10 @@
         <!-- Carousel -->
         <section class="section_carousel" id="campos_de_accion">
             <div class="title_container" data-aos="fade-right">
-                <h2>
-                    EXPLORA NUESTROS <br />
-                    <span> CAMPOS DE ACCION </span>
-                </h2>
+                    <h2>
+                        EXPLORA NUESTROS <br/>
+                        <span>  CAMPOS DE ACCION </span>
+                    </h2>
             </div>
 
             <div class="carousel_main_container">          
@@ -449,152 +449,53 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
                             </button>
                         </div>
+                        <div class="mineatures_container" id="mineatures_container">         
+                            <div class="mineature" id="mineature" data-id="1" data-active="true" onclick="change_banner_active(1)">
+                                    <img src="./assets/carousel/ambito-urbano-mineatura.webp" alt="mineatura ambito urbano" /> 
+                                    <button> Ámbito urbano </button>                
+                            </div>
+
+                            <div class="mineature" id="mineature" data-id="2" data-active="false" onclick="change_banner_active(2)">
+                                    <img src="./assets/carousel/campo-b-mineatura.webp" alt="mineatura Campo" /> 
+                                    <button> Campo </button>                
+                            </div>
+
+                            <div class="mineature" id="mineature" data-id="3" data-active="false" onclick="change_banner_active(3)">
+                                    <img src="./assets/carousel/medio-ambiente-mineatura.webp" alt="mineatura Medio ambiente" /> 
+                                    <button> Medio ambiente </button>                
+                            </div>
+
+                            <div class="mineature" id="mineature" data-id="4" data-active="false" onclick="change_banner_active(4)">
+                                    <img src="./assets/carousel/cartografia-mineatura.webp" alt="mineatura Cartografia" /> 
+                                    <button> Cartografia </button>                
+                            </div>
+
+                            <div class="mineature" id="mineature" data-id="5" data-active="false" onclick="change_banner_active(5)">
+                                    <img src="./assets/carousel/suelo-mineatura.webp" alt="mineatura Suelo" /> 
+                                    <button> Suelo </button>                
+                            </div>
+
+                            <div class="mineature" id="mineature" data-id="6" data-active="false" onclick="change_banner_active(6)">
+                                    <img src="./assets/carousel/atmosfera-mineatura.webp" alt="mineatura Atmósfera" /> 
+                                    <button> Atmósfera </button>                
+                            </div>
+
+                            <div class="mineature" id="mineature" data-id="7" data-active="false" onclick="change_banner_active(7)">
+                                    <img src="./assets/carousel/gestion-riesgo-mineatura.webp" alt="mineatura Gestión de riesgo" /> 
+                                    <button> Gestión de riesgo </button>                
+                            </div>
                     </div>
-
-                    <div class="container_img_banner" id="container_img_banner" data-id="2" data-active="false">
-                        <img src="./assets/carousel/campo-b.webp" alt="Banner Campo" />
-                        <div class="text_container">
-                            <h2> Campo </h2>
-                            <p>
-                                Cultivos: identificación, análisis y predicción. <br /> Identificación de plagas. <br />
-                                Seguimiento de daños climáticos.
-                            </p>
-                        </div>
                     </div>
-
-                    <div class="container_img_banner" id="container_img_banner" data-id="3" data-active="false">
-                        <img src="./assets/carousel/medio-ambiente.webp" alt="Banner Medio ambiente" />
-                        <div class="text_container">
-                            <h2> Medio ambiente </h2>
-                            <p>
-                                Gestión de Cuencos y Humedales. <br /> Erosión del suelo. <br />Mapeo de hábitats.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="container_img_banner" id="container_img_banner" data-id="4" data-active="false">
-                        <img src="./assets/carousel/cartografia.webp" alt="Banner Cartografia" />
-                        <div class="text_container">
-                            <h2> Cartografia </h2>
-                            <p>
-                                Mapas catastrales. <br /> Mapas viales y de infraestructuras. <br /> Modelos digitales
-                                de elevación.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="container_img_banner" id="container_img_banner" data-id="5" data-active="false">
-                        <img src="./assets/carousel/suelo.webp" alt="Banner Suelo" />
-                        <div class="text_container">
-                            <h2> Suelo </h2>
-                            <p>
-                                Monitoreo de actividad sísmica. <br /> Variaciones del campo geomagnético. <br />
-                                Clasificación del suelo.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="container_img_banner" id="container_img_banner" data-id="6" data-active="false">
-                        <img src="./assets/carousel/atmosfera.webp" alt="Banner Atmósfera" />
-                        <div class="text_container">
-                            <h2> Atmósfera </h2>
-                            <p>
-                                Calidad del aire. <br /> Gestión y predicción de catástrofes. <br /> Estudio de cambio
-                                climático.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="container_img_banner" id="container_img_banner" data-id="7" data-active="false">
-                        <img src="./assets/carousel/gestion-riesgo.webp" alt="Banner Gestión de riesgo" />
-                        <div class="text_container">
-                            <h2> Gestión de riesgo </h2>
-                            <p>
-                                Manejo de zonas inundables. <br /> Mapas de permeabilidad. <br /> Temperaturas de
-                                volcanes.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- Carousel mineatures -->
-                <div class="mineatures_container_main">
-                    <div class="displace_mineaturas">
-                        <button class="displace_mineatura_btn" onclick="scroll_container_mineatures('-')">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                <path
-                                    d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
-                            </svg>
-                        </button>
-                        <button class="displace_mineatura_btn" onclick="scroll_container_mineatures('+')">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                <path
-                                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="mineatures_container" id="mineatures_container">
-                        <div class="mineature" id="mineature" data-id="1" data-active="true"
-                            onclick="change_banner_active(1)">
-                            <img src="./assets/carousel/ambito-urbano-mineatura.webp" alt="mineatura ambito urbano" />
-                            <button> Ámbito urbano </button>
-                        </div>
-
-                        <div class="mineature" id="mineature" data-id="2" data-active="false"
-                            onclick="change_banner_active(2)">
-                            <img src="./assets/carousel/campo-b-mineatura.webp" alt="mineatura Campo" />
-                            <button> Campo </button>
-                        </div>
-
-                        <div class="mineature" id="mineature" data-id="3" data-active="false"
-                            onclick="change_banner_active(3)">
-                            <img src="./assets/carousel/medio-ambiente-mineatura.webp" alt="mineatura Medio ambiente" />
-                            <button> Medio ambiente </button>
-                        </div>
-
-                        <div class="mineature" id="mineature" data-id="4" data-active="false"
-                            onclick="change_banner_active(4)">
-                            <img src="./assets/carousel/cartografia-mineatura.webp" alt="mineatura Cartografia" />
-                            <button> Cartografia </button>
-                        </div>
-
-                        <div class="mineature" id="mineature" data-id="5" data-active="false"
-                            onclick="change_banner_active(5)">
-                            <img src="./assets/carousel/suelo-mineatura.webp" alt="mineatura Suelo" />
-                            <button> Suelo </button>
-                        </div>
-
-                        <div class="mineature" id="mineature" data-id="6" data-active="false"
-                            onclick="change_banner_active(6)">
-                            <img src="./assets/carousel/atmosfera-mineatura.webp" alt="mineatura Atmósfera" />
-                            <button> Atmósfera </button>
-                        </div>
-
-                        <div class="mineature" id="mineature" data-id="7" data-active="false"
-                            onclick="change_banner_active(7)">
-                            <img src="./assets/carousel/gestion-riesgo-mineatura.webp"
-                                alt="mineatura Gestión de riesgo" />
-                            <button> Gestión de riesgo </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Displace buttons -->
-                <button class="displace_btn displace_left" onclick="previous_banner()">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                        <path
-                            d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
-                    </svg>
-                </button>
-                <button class="displace_btn displace_right" onclick="next_banner()">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                        <path
-                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                    </svg>
-                </button>
+ 
+                     <!-- Displace buttons -->
+                     <button class="displace_btn displace_left" onclick="previous_banner()"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
+                    </button>
+                    <button class="displace_btn displace_right" onclick="next_banner()"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+                    </button>
             </div>
         </section>
-
     </main>
     <section class="contacto" id="contacto">
         <div class="contacto_titulo">
