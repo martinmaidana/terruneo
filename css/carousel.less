@@ -12,12 +12,12 @@
     h2{
         color: var(--text-main-color);
         font-weight: 400;
-        font-size: 50px;
+        font-size: 40px;
     }
     span{
         color: var(--main-color);
         font-weight: 800;
-        font-size: 50px;
+        font-size: 40px;
     }
 }
 
@@ -30,15 +30,16 @@
     overflow: hidden;
     width: 100%;
     //max-width: 1250px;
-    height: 610px;
+    height: 500px;
     margin: auto;
-    margin-top: 70px;
+    margin-top: 50px;
     border-radius: 50px;
     box-shadow: inset 0px 27px 100px 0px #2F2F2F;
 
-    // Pantalla > a 1550px
-    @media screen and (min-width:1550px) {        
-        height: 700px;
+    // Pantalla > a 1650px
+    @media screen and (min-width:1650px) {        
+        height: 600px;
+        max-width: 1600px;
     }
 }
 
@@ -46,7 +47,7 @@
 .mineatures_container_main{
     width: 800px;   
     position: absolute;
-    bottom: 50px;
+    bottom: 20px;
     left: calc(50% - 400px);
     .displace_mineaturas{
         @height: 25px;
@@ -92,8 +93,8 @@
         backdrop-filter: blur(40px);
         gap: 15px;
         .mineature{
-            @width: 230px;
-            @height: 120px;
+            @width: 200px;
+            @height: 100px;
             z-index: 10;
             border: 1px solid transparent;
             min-width:  @width;
@@ -116,7 +117,7 @@
                 bottom: 10px;
                 left: 10px;
                 border-radius: 20px;
-                padding: 4px 15px;
+                padding: 3px 13px;
                 background-color: #D9D9D9D9;
                 border: none;
                 outline: none;
@@ -163,7 +164,7 @@
         }
         .text_container{
             position: absolute;
-            top: 185px;
+            top: 145px;
             left: 50%;
             transform: translateX(-50%);
             padding: 20px;
@@ -171,7 +172,7 @@
             text-align: center;
             text-shadow: #000000 1px 1px 8px;
             h2{
-                font-size: 50px;
+                font-size: 35px;
                 font-weight: 800;
                 line-height: 114%;
                 text-transform: uppercase;
@@ -183,7 +184,7 @@
                 color: white;
             }
             p{
-                font-size: 25px;
+                font-size: 20px;
                 font-weight: 300;
                 line-height: 123%;
                 margin-top: 29px;
@@ -319,7 +320,9 @@
     }
 
     .banners_container{
-        .container_img_banner{
+        border-radius: 25px;
+        overflow: hidden;
+        .container_img_banner{          
             .text_container{
                 transform: translateX(0px);
                 top: 0px;

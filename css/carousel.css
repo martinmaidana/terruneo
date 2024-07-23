@@ -6,32 +6,33 @@
 .title_container h2 {
   color: var(--text-main-color);
   font-weight: 400;
-  font-size: 50px;
+  font-size: 40px;
 }
 .title_container span {
   color: var(--main-color);
   font-weight: 800;
-  font-size: 50px;
+  font-size: 40px;
 }
 .carousel_main_container {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 610px;
+  height: 500px;
   margin: auto;
-  margin-top: 70px;
+  margin-top: 50px;
   border-radius: 50px;
   box-shadow: inset 0px 27px 100px 0px #2F2F2F;
 }
-@media screen and (min-width: 1550px) {
+@media screen and (min-width: 1650px) {
   .carousel_main_container {
-    height: 700px;
+    height: 600px;
+    max-width: 1600px;
   }
 }
 .mineatures_container_main {
   width: 800px;
   position: absolute;
-  bottom: 50px;
+  bottom: 20px;
   left: calc(50% - 400px);
 }
 .mineatures_container_main .displace_mineaturas {
@@ -77,10 +78,10 @@
 .mineatures_container_main .mineatures_container .mineature {
   z-index: 10;
   border: 1px solid transparent;
-  min-width: 230px;
-  max-width: 230px;
-  min-height: 120px;
-  max-height: 120px;
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 100px;
+  max-height: 100px;
   overflow: hidden;
   position: relative;
   cursor: pointer;
@@ -98,7 +99,7 @@
   bottom: 10px;
   left: 10px;
   border-radius: 20px;
-  padding: 4px 15px;
+  padding: 3px 13px;
   background-color: #D9D9D9D9;
   border: none;
   outline: none;
@@ -142,7 +143,7 @@
 }
 .banners_container .container_img_banner .text_container {
   position: absolute;
-  top: 185px;
+  top: 145px;
   left: 50%;
   transform: translateX(-50%);
   padding: 20px;
@@ -151,7 +152,7 @@
   text-shadow: #000000 1px 1px 8px;
 }
 .banners_container .container_img_banner .text_container h2 {
-  font-size: 50px;
+  font-size: 35px;
   font-weight: 800;
   line-height: 114%;
   text-transform: uppercase;
@@ -163,7 +164,7 @@
   color: white;
 }
 .banners_container .container_img_banner .text_container p {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 300;
   line-height: 123%;
   margin-top: 29px;
@@ -274,6 +275,10 @@
   .mineatures_container_main .mineatures_container .mineature[data-active="true"] {
     border: 1px solid var(--main-color);
     background-color: var(--main-color);
+  }
+  .banners_container {
+    border-radius: 25px;
+    overflow: hidden;
   }
   .banners_container .container_img_banner .text_container {
     transform: translateX(0px);

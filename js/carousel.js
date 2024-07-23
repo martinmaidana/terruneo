@@ -1,106 +1,8 @@
-/* const DATA_BANNERS = [
-    {
-        id:1,
-        title: 'Ámbito urbano',
-        description: 'Detección de construcciones no declaradas.<br/> Actualización del parcelario catastral. <br/> Clasificación de coberturas y usos del suelo.',
-        img_main: './assets/carousel/ambito-urbano.webp',
-        img_mineature: './assets/carousel/ambito-urbano-mineatura.webp'
-    },
-    {
-        id:2,
-        title: 'Campo',
-        description: 'Cultivos: identificación, análisis y predicción. <br/> Identificación de plagas. <br/> Seguimiento de daños climáticos.',
-        img_main: './assets/carousel/campo-b.webp',
-        img_mineature: './assets/carousel/campo-b.webp'
-    },
-    {
-        id:3,
-        title: 'Medio ambiente',
-        description: 'Gestión de Cuencos y Humedales. <br/> Erosión del suelo. <br/>Mapeo de hábitats.',
-        img_main: './assets/carousel/medio-ambiente.webp',
-        img_mineature: './assets/carousel/medio-ambiente.webp'
-    },
-    {
-        id:4,
-        title: 'Cartografia',
-        description: 'Mapas catastrales. <br/> Mapas viales y de infraestructuras. <br/> Modelos digitales de elevación.',
-        img_main: './assets/carousel/cartografia.webp',
-        img_mineature: './assets/carousel/cartografia.webp'
-    }, 
-    {
-        id:5,
-        title: 'Suelo',
-        description: 'Monitoreo de actividad sísmica. <br/> Variaciones del campo geomagnético. <br/> Clasificación del suelo.',
-        img_main: './assets/carousel/suelo.webp',
-        img_mineature: './assets/carousel/suelo.webp'
-    },    
-    {
-        id:6,
-        title: 'Atmósfera',
-        description: 'Calidad del aire. <br/> Gestión y predicción de catástrofes. <br/> Estudio de cambio climático.',
-        img_main: './assets/carousel/atmosfera.webp',
-        img_mineature: './assets/carousel/atmosfera.webp'
-    },
-    {
-        id:7,
-        title: 'Gestión de riesgo',
-        description: 'Manejo de zonas inundables. <br/> Mapas de permeabilidad. <br/> Temperaturas de volcanes.',
-        img_main: './assets/carousel/gestion-riesgo.webp',
-        img_mineature: './assets/carousel/gestion-riesgo.webp'
-    },
-]
-
-const banner_container = document.getElementById('banner_container')
-const text_container = document.getElementById('text_container')
-const mineatures_container = document.getElementById('mineatures_container')
-
-const render_mineaturas = async () => 
-{
-    const html = DATA_BANNERS.map((banner)=>{
-        return `
-            <div class="mineature" data-id="${banner.id}">
-                <img src="${banner.img_mineature}" alt="mineatura ${banner.title}" /> 
-                <button> ${banner.title} </button>                
-            </div>
-        `
-    }).join('')
-
-    mineatures_container.innerHTML = html
-}
-
-const render_banners = async () => 
-{
-    const html = DATA_BANNERS.map((banner)=>{
-        return `
-            <div class="container_img_banner" data-id="${banner.id}" data-active="${banner.id == banner_active}">
-                <img src="${banner.img_main}" alt="Banner ${banner.title}" />       
-            </div>
-        `
-    }).join('')
-
-    banner_container.innerHTML = html
-}
-
-const render_text = async () => 
-    {
-        const html = DATA_BANNERS.map((banner)=>{
-            return `
-                <div>
-                    <h2> ${banner.title} </h2>
-                    <p> ${banner.description} </p>            
-                </div>
-            `
-        }).join('')
-    
-        text_container.innerHTML = html
-    }
-
-render_mineaturas();
-render_banners();
- */
 
 let banner_active = 1 
+const container_banner = document.getElementById('banners_container')
 let banners_length = document.querySelectorAll('#container_img_banner').length
+let timeTransition = 6000 // Cada 6 segundos
 let timeOut
 
 const change_banner_active = (id=1) => 
@@ -149,7 +51,7 @@ const start_timeOut = () =>
 {
     timeOut = setTimeout(() => {
         next_banner()
-    }, 5000);
+    }, timeTransition);
 }
 start_timeOut()
 
@@ -182,3 +84,28 @@ const scroll_container_mineatures = (action="+") =>
     }
     container.scrollLeft -= scroll_value
 }
+
+
+// Mobile functions
+let startX = 0;
+let endX = 0;
+
+container_banner.addEventListener('touchstart', (event) => {
+    startX = event.touches[0].clientX;
+});
+
+container_banner.addEventListener('touchmove', (event) => {
+    endX = event.touches[0].clientX;
+});
+
+container_banner.addEventListener('touchend', (event) => {
+    if(endX > 0){
+        if(startX > endX){
+            next_banner()
+        }else{
+            previous_banner()
+        }
+    }
+    startX = 0;
+    endX = 0;
+});

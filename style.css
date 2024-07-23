@@ -204,6 +204,8 @@ nav {
   padding-top: 40px;
 }
 .cards {
+  max-width: 1600px;
+  margin: auto;
   padding: 0px 70px 0px 70px;
 }
 .card_fila1,

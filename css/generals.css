@@ -3,3 +3,24 @@
     --main-color: #F2914A;
     --background-color: #202020;
 }
+
+.decoration{
+    width: 50px;
+    border-top: 3px solid var(--main-color);
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    transform-origin: left;
+    &::after{
+        content: '';
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        right: 0px;
+        top: -9px;
+        border-radius: 8px;
+        background-color: var(--main-color);
+        transition: all 0.3s;
+    }
+}
