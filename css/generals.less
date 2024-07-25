@@ -1,0 +1,52 @@
+:root{
+    --text-main-color: #fff;
+    --main-color: #F2914A;
+    --background-color: #202020;
+
+    --title-size: 40px;
+    --subtitle-size: 25px;
+    --text-size: 18px;
+    --text-v2-size: 22px;
+
+    --padding-gral: 70px;
+
+    @media screen and (min-width:1650px) {
+        --padding-gral: 200px;
+    }
+    @media screen and (max-width:1200px) {
+        --title-size: 33px;
+        --subtitle-size: 22px;   
+        --text-size: 16.5px; 
+        --text-v2-size: 20px; 
+        --padding-gral: 20px;
+    }
+    //Mobile
+    @media screen and (max-width:750px) {
+        --title-size: 28px;
+        --subtitle-size: 20px;   
+        --text-size: 15px; 
+        --text-v2-size: 18px;   
+    }
+
+}
+
+.decoration{
+    width: 50px;
+    border-top: 3px solid var(--main-color);
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    transform-origin: left;
+    &::after{
+        content: '';
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        right: 0px;
+        top: -9px;
+        border-radius: 8px;
+        background-color: var(--main-color);
+        transition: all 0.3s;
+    }
+}

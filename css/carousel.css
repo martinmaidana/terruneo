@@ -1,6 +1,6 @@
 .section_carousel {
   width: 100%;
-  padding: 70px;
+  padding: 70px var(--padding-gral);
   background-color: var(--background-color);
 }
 .title_container h2 {
@@ -226,8 +226,9 @@
 }
 @media screen and (max-width: 750px) {
   .section_carousel {
-    padding: 70px 15px;
+    padding: 70px var(--padding-gral);
     padding-bottom: 150px;
+    border-top: none;
   }
   .title_container h2 {
     font-size: 25px;

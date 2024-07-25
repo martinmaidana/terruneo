@@ -27,17 +27,19 @@ nav {
 .blanco {
   font-weight: bolder;
   color: white;
-  font-size: 4em;
+  font-size: var(--title-size);
+  margin-bottom: 0px;
 }
 
 .naranja {
   font-weight: bold;
   color: #f3924b; /* Cambiando a color naranja */
-  font-size: 4em;
+  font-size: var(--title-size);
+  margin-bottom: 0px;
 }
 
 .nav_terruneo {
-  padding-left: 40px;
+  padding-left: var(--padding-gral);
   padding-top: 20px;
 }
 
@@ -45,14 +47,13 @@ nav {
   color: black;
   border-radius: 21px;
   margin-top: 22px;
-  margin-left: 40px;
-  margin-bottom: 110px;
-  width: 230px;
-  height: 50px;
-  font-size: 18px; /* Tamaño de la fuente */
+  margin-left: var(--padding-gral);
+  margin-bottom: 70px;
+  font-size: var(--text-size); 
   color: black;
   background-color: rgb(204, 204, 204);
   flex-wrap: nowrap;
+  padding: 5px 20px;
 }
 
 .button_conocenos a {
@@ -68,7 +69,7 @@ nav {
 .titulo_blanco {
   color: white;
   font-weight: 800; /* O también puedes usar 'bold' */
-  font-size: 60px;
+  font-size: 45px;
   line-height: 54px;
 }
 .gestiona{
@@ -76,43 +77,49 @@ nav {
 }
 
 .titulo_principal {
-  padding-top: 80px;
-  padding-left: 40px;
+  padding-top: 30px;
+  padding-left: var(--padding-gral);
 }
 
 /* -----------------HEADER-------------- */
 .teledeteccion {
-  display: grid;
-  justify-content: end;
-  margin-top: 80px;
-  margin-right: 50px;
-  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 100%;
+  padding: 70px var(--padding-gral);
 }
 .teledeteccion_titulo {
-  margin-bottom: 5.5em;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 40px;
   line-height: 0.9px;
 }
 .teledeteccion_parrafo {
-  line-height: 13.9px;
-  font-size: 2em;
+  width: 100%;
+  max-width: 600px;
+  font-size: var(--text-v2-size);
+  color: white;
+  text-shadow: #000000 1px 1px 8px;
+}
+.teledeteccion_parrafo span{
+  color: var(--main-color);
+  font-weight: 800;
 }
 
-.teledeteccion_parrafo_blanco {
-  color: white;
-}
 
 .teledeteccion_titulo_blanco {
-  font-size: 50px;
+  font-size: var(--title-size);
   color: #ffffff;
-   font-weight: 800; /* Extrabold */
-  line-height: 110%; /* Line height of 110% */
+  font-weight: 800; 
+  line-height: 110%; 
 }
 
 .teledeteccion_titulo_naranja {
-  font-size: 50px;
   color: #f3924b;
-  font-weight: 800; /* Extrabold */
-  line-height: 110%; /* Line height of 110% */
+  font-weight: 800; 
+  line-height: 110%; 
 }
 
 .container-img{
@@ -128,9 +135,6 @@ nav {
   object-position: -5px 60%;
 }
 
-.descubri{
-  width: 745px;
-}
 
 .parrafos-container {
   display: flex;
@@ -170,6 +174,35 @@ nav {
 
 }
 
+.cards-imagen{
+  width: 100%;
+  max-width: 590px;
+}
+.cards_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px 10px;
+  width: 100%;
+  /* max-width: 1600px;
+  margin:auto; */
+  padding: 0px var(--padding-gral);
+}
+
+.container_img_card{
+  width: 100%;
+  height: 255px;
+  border-radius: 45px;
+  overflow: hidden;
+}
+
+.imagen_teledeteccion {
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+  object-position: center center;
+}
 
 .subtitulo_naranja {
   padding-left: 100px;
@@ -182,49 +215,41 @@ nav {
 }
 
 .subtitulo_naranja_inside {
-  color: #f3924b; /* Cambiando a color naranja */
+  color: var(--main-color); /* Cambiando a color naranja */
   font-weight: bold;
 }
 .h6_naranja {
-  line-height: 0.5px;
-  color: rgb(243, 146, 75);
+  color: var(--main-color);
   font-weight: 900;
-  margin-top: 24px;
-  font-size: 26px;
+  font-size: var(--subtitle-size);
+  margin-top: 20px;
+  margin-bottom: 0px;
+  line-height: 108%;
 }
 
 .texto_blanco {
-  padding: 0 70px;
+  padding: 0 var(--padding-gral);
   color: white;
   font-size: 20px;
 }
 .tabla1 {
-  padding: 0 70px;
+  padding: 0 var(--padding-gral);
   color: white;
-  padding-top: 40px;
+  padding-top: 70px;
+  margin-top: 100px;
+  border-top: 1px solid white;
 }
-.cards {
-  max-width: 1600px;
-  margin: auto;
-  padding: 0px 70px 0px 70px;
-}
-.card_fila1,
-.cards_fila2 {
-  width: -webkit-fill-available;
-  display: flex;
-  justify-content: space-between;
-}
-.imagen_teledeteccion {
-  height: 250px;
-  border-radius: 27px;
-}
+
+
 
 .texto_blanco_cards {
   color: white;
-  font-size: 1.5em;
+  font-size: var(--text-size);
+  margin-bottom: 0px;
 }
 
 .texto_naranja {
+  font-size: var(--text-v2-size);
   color: #f3924b; /* Cambiando a color naranja */
 }
 
@@ -235,7 +260,7 @@ nav {
   background-size: cover;
   background-color: #202020;
   padding-top: 85px;
-  padding-left: 70px;
+  padding-left: var(--padding-gral);
   border-bottom: 1px solid white;
 }
 .solucion_h6_naranja {
@@ -290,7 +315,7 @@ nav {
   width:769px;
 }
 .facil-de-usar-titulo1 {
-  padding-left: 70px;
+  padding-left: var(--padding-gral);
   font-size: 50px;
   color: #ffffff;
   font-weight: bold;
@@ -311,32 +336,11 @@ nav {
   position: relative;
   width: 100%;
 
-  padding: 0 70px;
+  padding: 0 var(--padding-gral);
 }
 
 .linea_blanca2 {
   background-color: #ffffff;
-}
-
-
-.facil_parrafos_en_orden {
-  display: flex;
-  /* justify-content: center; */
-  padding: 40px 0px 40px 0px;
-  /* flex-direction: row; */
-  flex-wrap: wrap;
-}
-
-.facil_parrafos {
-  display: flex;
-  /* justify-content: center; */
-  padding: 17px 70px 0px 0px;
-  /* flex-direction: row; */
-  flex-wrap: wrap;
-}
-
-.facil_parrafos_columna {
-  padding-right: 200px;
 }
 
 .linea_blanca2 {
@@ -371,7 +375,7 @@ nav {
 .video-container {
   display: flex;
   justify-content: center; /* Centra el contenido horizontalmente */
-  padding: 0 70px; /* 70px de padding a la izquierda y a la derecha */
+  padding: 0 var(--padding-gral); /* 70px de padding a la izquierda y a la derecha */
   margin-top: 70px; /* Agrega espacio adicional arriba */
 }
 
@@ -394,23 +398,34 @@ nav {
 .numero {
   font-size: 2em;
 }
-.columna-3 p {
-  font-size: 1.9em;
-  line-height: 0.6;
-}
-.facil_parrafos_en_orden h3 {
-  font-size: 3.1rem;
-}
-.columna-1 {
-  flex: 0 1 10%; /* Columna 1 ocupa el 10% del espacio */
+
+
+/* FACIL DE USAR, PARRAFOS EN ORDEN */
+.facil_parrafos{
+  width: 100%;
+  height: auto;
+  padding: 50px 0px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
 }
 
-.columna-2 {
-  flex: 1 1 25%; /* Columna 2 ocupa el 25% del espacio */
+.facil_parrafos .facil_numero{
+  width: 15%;
+  font-size: var(--text-v2-size);
 }
-
-.columna-3 {
-  flex: 3; /* Columna 3 ocupa el resto del espacio */
+.facil_parrafos h3{
+  width: 40%;
+  text-wrap: balance;
+  font-size: var(--subtitle-size);
+}
+.facil_parrafos h3 .decoration{
+  display: none;
+}
+.facil_parrafos .facil_descripction{
+  width: 45%;
+  text-wrap: pretty;
+  font-size: var(--text-size);
 }
 
 /* --------------CAMPOS DE ACCION-------------- */
@@ -419,7 +434,7 @@ nav {
 }
 
 .explora-nuestros {
-  padding-left: 70px;
+  padding-left: var(--padding-gral);
   font-size: 50px;
   color: #ffffff;
   font-weight: bold;
@@ -437,7 +452,7 @@ nav {
 }
 
 #carouselExampleCaptions.carousel {
-  padding: 10px 70px 10px 70px;
+  padding: 10px var(--padding-gral) 10px var(--padding-gral);
 }
 
 .carousel-subtitulos {
@@ -458,54 +473,17 @@ nav {
 } 
 
 
-/* .slider {
-  background-size: cover;
-  height: 80vh; /* Ajustar altura de la imagen 
-}
-.slide1 {
-  background-image: url("./assets/carrousel/luxa.org-opacity-changed-Campo-1.jpeg");
-}
-
-.slide2 {
-  background-image: url("./assets/carrousel/luxa.org-opacity-changed-Campo-1.jpeg");
-}
-
-.slide3 {
-  background-image: url("./assets/carrousel/luxa.org-opacity-changed-Medio\ ambiente\ 2.jpg");
-}
-
-.slide4 {
-  background-image: url("./assets/carrousel/luxa.org-opacity-changed-Cartografia\ 3.jpg");
-}
-
-.slide5 {
-  background-image: url("../assets/carrousel/luxa.org-opacity-changed-Suelo\ 4.jpg");
-}
-
-.slide6 {
-  background-image: url("../assets/carrousel/luxa.org-opacity-changed-Atmósfera\ 5\ \(1\).jpg");
-}
-
-.slide7 {
-  background-image: url("../assets/carrousel/luxa.org-opacity-changed-Gestión\ de\ riesgo\ 6.jpg");
-}
-
-.thumbnail {
-  width: 80px; /* Ancho de las miniaturas 
-  height: auto; /* Altura ajustada automáticamente 
-  cursor: pointer;  Cambia el cursor al pasar por encima } */
-
 
 /* --------------FORMULARIO DE CONTACTO-------------- */
 .contacto {
   background-image: url("./assets/Group-1000001931_1.webp");
   background-size: cover;
-  background-color: black;
+  background-color: var(--background-color);
 }
 
 .contactanos {
-  padding-left: 70px;
-  font-size: 54px;
+  padding-left: var(--padding-gral);
+  font-size: var(--title-size);
   color: #f3924b;
   font-weight: bold;
   padding-top: 60px;
@@ -567,7 +545,7 @@ nav {
   padding-left: 40px;
   padding-top: 100px;
   border-radius: 18px;
-  background-color: #0f0e0e;
+  background-color: var(--background-color);
   margin-top: 70px;
   color: white;
   margin-bottom: 60px;
@@ -593,155 +571,12 @@ formulario-boton-enviar{
   justify-content: flex-end !important;
 }
 
-/* --------------FOOTER-------------- */
 /* Estilos personalizados */
-.footer {
-  background-color: #1c1c1c; /* Negro */
-  color: #fff; /* Blanco */
-  display: flex;
-  flex-direction: column;
-  padding-left: 100px;
-  padding-top: 80px;
 
-  padding-bottom: 40px;
-}
 
-.logo_atic {
-  width: 217px;
-  padding-bottom: 40px;
-  padding-top: 15px;
-}
-
-.logo-terruneo-footer {
-  width: 94px;
-  padding-bottom: 40px;
-}
-
-.footer-parrafos a {
-  text-decoration: none;
-  text-align: center;
-
-  background-color: transparent;
-  color: white;
-}
-.footer-parrafos {
-  color: white;
-}
-
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 120px;
-}
-
-.footer-right {
-  padding-right: 110px;
-}
-
-.footer-bottom {
-  display: flex;
-  justify-content: center;
-}
-.footer-terruneo {
-  display: flex;
-}
-/* 
-@media screen and (max-width: 1408px) {
-  .facil_parrafos_columna {
-    padding-right: 160px;
-  }
-}
-@media screen and (max-width: 1367px) {
-  .facil_parrafos_columna {
-    padding-right: 140px;
-  }
-  .columna-3 p {
-    font-size: 1.8em;
-    line-height: 0.6;
-  }
-}
-
-@media screen and (max-width: 1296px) {
-  .facil_parrafos_columna {
-    padding-right: 116px;
-  }
-  .columna-3 p {
-    font-size: 1.6em;
-    line-height: 0.6;
-  }
-}
-@media screen and (max-width: 1288px) {
-  .facil_parrafos_columna {
-    padding-right: 117px;
-  }
-}
-/* ----------------MEDIA QUERIES  --------------*/
-/* @media screen and (max-width: 1256px) {
-  .facil_parrafos_columna {
-    padding-right: 140px;
-  }
-  .columna-3 p {
-    font-size: 1.7em;
-    line-height: 0.6;
-  }
-  .cards {
-    padding: 0px 20px 0px 20px;
-  }
-
-  .imagen_teledeteccion {
-    width: 555px;
-  }
-  .contacto_titulo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .contacto_formulario {
-    padding-left: 40px;
-    padding-top: 100px;
-
-    margin-bottom: 40px;
-    padding-bottom: 40px;
-    padding-right: 40px;
-    margin-right: 40px;
-  }
-  .contactanos {
-    padding-left: 0px;
-  }
-}
-/* ----------------MEDIA QUERIES  --------------*/
-/* @media screen and (max-width: 1178px) {
-  .imagen_teledeteccion {
-    width: 537px;
-  }
-}
 
 /* ----------------MEDIA QUERIES TABLET --------------*/
 @media screen and (max-width: 1000px) {
-  .imagen_teledeteccion {
-    height: 317px;
-    width: -webkit-fill-available;
-  }
-  .cards {
-    display: flex;
-    padding: 0px 10px 0px 10px;
-    flex-direction: column;
-    /* align-items: stretch; */
-  }
-
-  .card_fila1,
-  .cards_fila2 {
-    /* width: -webkit-fill-available; */
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cards-imagen1,
-  .cards-imagen2 {
-    padding-right: 0px;
-  }
 
   .contacto_titulo {
     display: flex;
@@ -758,84 +593,64 @@ formulario-boton-enviar{
   .carousel-parrafos p {
     font-size: 17px;
   }
-  .columna-3 {
-    padding-top: 20px;
-    flex: 3;
-  }
-  .columna-3 p {
-    font-size: 1.1em;
-    line-height: 0.6;
-  }
 
   .tabla1 {
     padding: 0px 20px;
     color: white;
     padding-top: 40px;
   }
-  .facil_parrafos_en_orden {
-    display: flex;
-    /* justify-content: center; */
-    padding: 20px 0px 20px 0px;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
 }
 /*--------------- MEDIA QUERIES PHONE------------- */
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 750px) {
   .nav_terruneo {
     padding-top: 20px;
     padding-left: 20px;
   }
 
-  .blanco {
-    font-size: 3em;
-  }
-  .naranja {
-    font-size: 3em;
-  }
-
   .titulo_principal {
-    padding-top: 12px;
+    padding-top: 20px;
     padding-left: 2px;
   }
   .titulo_blanco {
-    color: white;
-    font-weight: 800;
-    font-size: 2.5em;
-    text-align: center;
+    font-size: 25px;
+    line-height: 105%;
+    
+  }
+  .gestionadElTerritorio {
+    background-image: none;
+  }
+  .gestiona{
+    padding-left: var(--padding-gral);
+    width: 100%;
   }
 
   .button_conocenos {
-    border-radius: 21px;
-    margin: 30px auto 25px auto;
-    width: 130px;
-    height: 44px;
-    font-size: 17px;
-    color: rgb(44, 44, 44);
-    background-color: rgb(204, 204, 204);
-    display: block;
+    border-radius: 25px;
+    margin-left: var(--padding-gral);
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
   .h6_naranja {
+    text-align: center;
     font-size: 22px;
   }
   .teledeteccion_titulo {
-    margin-bottom: 2.5em;
-    line-height: 0.9px;
-  }
-  .teledeteccion_titulo_blanco {
-    font-size: 2em;
+    margin-bottom: 0px;
   }
 
-  .teledeteccion_titulo_naranja {
-    font-size: 2em;
+  
+  .container-img{
+    height: 140px;
   }
 
-  .teledeteccion_parrafo {
-    line-height: 5px;
-    font-size: 1.2em;
+  .container-img .imagen-header {
+    object-position: -10px 80%;
   }
+
+  
   .teledeteccion {
+    margin-top: 30px;
     display: grid;
     justify-content: space-around;
     /* margin-top: 45px; */
@@ -844,29 +659,13 @@ formulario-boton-enviar{
     justify-items: center;
   }
 
-  .cards {
-    display: flex;
-    justify-content: space-between;
-    padding: 2px;
-    flex-direction: column;
-  }
-  .cards_fila1,
-  .cards_fila2 {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-  }
-
-  .cards-imagenes {
-    padding: 15px 30px 15px 30px;
-  }
-  .imagen_teledeteccion {
-    height: 250px;
-    width: 466px;
+  .container_img_card{
+    height: 150px;
     border-radius: 13px;
   }
 
   .texto_blanco_cards {
+    text-align: center;
     line-height: 1;
   }
 
@@ -916,14 +715,40 @@ formulario-boton-enviar{
     font-weight: bold;
   }
 
-  .facil_parrafos_en_orden h3 {
-    font-size: 1.8em;
-    line-height: 20px;
-  }
-  .tabla,
-  .facil_parrafos {
-    display: none;
-  }
+
+/* FACIL DE USAR, PARRAFOS EN ORDEN */
+.facil_parrafos{
+  flex-wrap: wrap;
+  padding: 30px 0px;
+}
+.facil_parrafos:last-child{
+  border-bottom: none;
+}
+
+.facil_parrafos .facil_numero{
+  width: 100%;
+  color: var(--main-color);
+  margin-bottom: 5px;
+}
+.facil_parrafos h3{
+  width: 100%;
+  color: var(--main-color);
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.facil_parrafos h3 .decoration{
+  display: inline-block;
+}
+.facil_parrafos .facil_descripction{
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+
+
+
   .video-container {
     display: flex;
     justify-content: center;
@@ -936,27 +761,8 @@ formulario-boton-enviar{
     color: white;
     padding-top: 20px;
   }
-  .facil_parrafos_en_orden {
-    display: flex;
-    /* justify-content: center; */
-    padding: 0px 0px 40px 0px;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  .columna-1 {
-    display: none;
-  }
-  .columna-2 {
-    text-align: center;
-    margin-top: 10px;
-  }
 
-  .columna-3 p {
-    margin-top: 10px;
-    /* padding-top: 6px; */
-    font-size: 1.5em;
-    line-height: 0.6;
-  }
+
 
   /* .------------EXPLORA NUESTROS CAMPOS DE ACCION -------------*/
   .explora-nuestros,
@@ -992,7 +798,6 @@ formulario-boton-enviar{
 
   .contactanos {
     padding-left: 10px;
-    font-size: 2em;
     color: #f3924b;
     font-weight: bold;
     padding-top: 15px;
@@ -1019,7 +824,7 @@ formulario-boton-enviar{
     padding-left: 55px;
     padding-top: 40px;
     border-radius: 18px;
-    background-color: #0f0e0e;
+    background-color: var(--background-color);
     margin-top: 40px;
     color: white;
     margin-bottom: 40px;
@@ -1038,95 +843,10 @@ formulario-boton-enviar{
   /* .formulario-boton {
     float: none;
   } */
-  /* ------------FOOTER----------------- */
-  .footer {
-    background-color: #1c1c1c;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-  }
-  .footer-top {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 30px;
-    flex-direction: column;
-    align-items: center;
-  }
-  .logo-terruneo-footer {
-    width: 48px;
-    padding-bottom: 19px;
-  }
-  .logo_atic {
-    width: 149px;
-    padding-bottom: 23px;
-    padding-top: 6px;
-  }
-  .footer-right {
-    padding-right: 0px;
-  }
-  .footer-parrafos {
-    text-align: center;
-  }
-  .footer-bottom {
-    margin-bottom: 15px;
-  }
-} */
 
-/* @media screen and (max-width: 509px) {
-  .teledeteccion_titulo_blanco {
-    font-size: 1.45em;
-  }
-  .teledeteccion_titulo_naranja {
-    font-size: 1.45em;
-  }
-  .teledeteccion_parrafo {
-    line-height: 2px;
-    font-size: 0.8em;
-  }
-  .imagen_teledeteccion {
-    height: auto;
-    width: 363px;
-    border-radius: 13px;
-  }
-  .teledeteccion {
-    margin-bottom: 10px;
-    margin-top: 30px;
-  }
 
-  .reconocimiento {
-    line-height: 27px;
-  }
-  .facil_parrafos_en_orden {
-    padding: 7px 0px 40px 0px;
-  }
-  .columna-3 p {
-    text-align: center;
-    font-size: 1.2em;
-    line-height: 0.8em;
-  }
-  .carousel-subtitulos {
-    font-size: 20px;
-    padding-bottom: 10px;
-  }
-  .carousel-parrafos p {
-    font-size: 14px;
-    line-height: 0.9em;
-  }
-  .contacto_formulario button {
-    margin: 0px;
-  }
+} 
 
-  .carousel-parrafos {
-    padding-bottom: 0px;
-  }
-
-  .footer-bottom {
-    text-align: center;
-  }
-}  */
 .contenedor_expan{
   background-color: rgb(167, 167, 167);
   width: 400px;

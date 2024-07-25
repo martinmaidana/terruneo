@@ -1,0 +1,69 @@
+.logo_terruneo{
+    display: flex;
+    align-items: center;
+}
+
+footer{
+    width: 100%;
+    padding: 0px var(--padding-gral);
+    padding-top: 185px;
+    background-color: var(--background-color);
+    color: white;
+    a{color: white;}
+}
+
+.container_logos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .logo_atic{
+        width: 186px;
+        height: auto;
+    }    
+}
+
+.container_text{
+    margin-top: 50px;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: space-between;
+    .text_b{
+        text-align: right;
+    }
+}
+
+.container_copyright{
+    width: 100%;
+    border-top: 1px solid #2F2F2F;
+    text-align: center;
+    padding: 25px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+    p{
+        margin-bottom: 0px;
+    }
+}
+
+// mobile
+@media screen and (max-width:750px) {
+    .container_copyright{
+        padding-bottom: 50px;
+        text-align: left;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0px;
+    }
+    .container_text{
+        flex-wrap: wrap;
+        .text_b{
+            width: 100%;
+            text-align: left;
+        }
+        .text_a{
+            display: none;
+        }
+    }
+}
